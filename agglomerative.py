@@ -8,7 +8,9 @@ from sklearn.cluster import AgglomerativeClustering
 import numpy as np
 from titles import titles
 
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+# embedder = SentenceTransformer("all-MiniLM-L6-v2")
+# embedder = SentenceTransformer("distiluse-base-multilingual-cased-v2")
+embedder = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 
 # Corpus with example sentences
 # corpus = [

@@ -8,7 +8,8 @@ from sklearn.cluster import KMeans
 
 from titles import titles
 
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+# embedder = SentenceTransformer("all-MiniLM-L6-v2")
+embedder = SentenceTransformer("distiluse-base-multilingual-cased-v2")
 
 # Corpus with example sentences
 corpus = titles
