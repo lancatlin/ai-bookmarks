@@ -1,3 +1,9 @@
+import gevent
+from gevent import monkey
+
+monkey.patch_all()
+
+import asyncio
 import requests
 from bs4 import BeautifulSoup
 
@@ -17,9 +23,10 @@ class BookmarkManager:
             self.bookmarks.append(bookmark)
 
     def retrieve(self):
-        for bookmark in self.bookmarks:
-            print("Accessing", bookmark.url)
-            bookmark.retrieve()
+        tasks = [gevent.spawn(bookmark.retrieve) for bookmark in self.bookmarks]
+        results = gevent.joinall(tasks)
+        for result in results:
+            print("Completed access", result.value)
 
 
 class Bookmarks:
@@ -31,8 +38,9 @@ class Bookmarks:
         self.description = ""
 
     def retrieve(self):
+        print("Accessing", self.url)
         try:
-            response = requests.get(self.url)
+            response = requests.get(self.url, timeout=15)
             response.encoding = "utf-8"
             soup = BeautifulSoup(response.text, "html.parser")
             try:
@@ -47,7 +55,7 @@ class Bookmarks:
                 print(self.description)
             except TypeError:
                 self.description = self.title
-        except requests.exceptions.RequestException as e:
+        except Exception as e:
             print(f"Error fetching URL: {e}")
             return None
 
@@ -57,7 +65,7 @@ def read_html_file(path):
         return file.read()
 
 
-if __name__ == "__main__":
+def main():
     html_file_path = "test.html"
     html_content = read_html_file(html_file_path)
     bookmark_manager = BookmarkManager()
@@ -65,3 +73,7 @@ if __name__ == "__main__":
     bookmark_manager.retrieve()
     # test = bookmark_manager.bookmarks[0]
     # test.retrieve()
+
+
+if __name__ == "__main__":
+    main()
