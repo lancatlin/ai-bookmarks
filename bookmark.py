@@ -3,12 +3,12 @@ import requests
 
 
 class Bookmark:
-    def __init__(self, url, date, icon):
+    def __init__(self, url, title="", description="", date="", icon=""):
         self.url = url
+        self.title = title
+        self.description = description
         self.date = date
         self.icon = icon
-        self.title = ""
-        self.description = ""
 
     def crawl(self, timeout=15):
         response = requests.get(self.url, timeout=timeout)
