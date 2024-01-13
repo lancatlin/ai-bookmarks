@@ -6,11 +6,13 @@ monkey.patch_all()
 from bs4 import BeautifulSoup
 import csv
 from bookmark import Bookmark
+import numpy as np
 
 
 class BookmarkManager:
     def __init__(self):
-        self.bookmarks = []
+        self.bookmarks: list[Bookmark] = []
+        self.embeddings = None
 
     def append(self, source):
         soup = BeautifulSoup(source, "html.parser")
@@ -34,6 +36,9 @@ class BookmarkManager:
             for row in reader:
                 bookmark = Bookmark(**row)
                 self.bookmarks.append(bookmark)
+
+    def load_embedding(self, file_name):
+        self.embeddings = np.load(file_name)
 
     def export(self, file_name):
         with open(file_name, "w") as csvfile:

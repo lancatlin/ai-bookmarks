@@ -5,36 +5,22 @@ import argparse
 
 from titles import titles
 
-from embedder import EmbeddingModel
 from cluster import ClusterModel
+from bookmark_manager import BookmarkManager
 
 
 class App:
-    def __init__(self):
+    def __init__(self, manager: BookmarkManager):
+        self.manager = manager
         self.clusterModel = ClusterModel()
-        self.sentences = []
-        self.embeddings = None
         self.embeddings_2d = None
         self.embeddings_3d = None
         self.n_clusters = 0
         self.cluster_labels = None
 
-    def run(self, sentences):
-        self.sentences = sentences
-        embedder = EmbeddingModel()
-        self.embeddings = embedder.embed(titles)
-
-    def save(self, file_name):
-        np.savez(file_name, sentences=self.sentences, embeddings=self.embeddings)
-
-    def load(self, file_name):
-        data = np.load(file_name)
-        self.sentences = data["sentences"]
-        self.embeddings = data["embeddings"]
-
     def cluster(self):
         self.n_clusters, self.cluster_labels = self.clusterModel.fit(
-            self.sentences, self.embeddings
+            self.manager.embeddings
         )
 
     def show(self):
@@ -43,7 +29,9 @@ class App:
             if cluster_id not in clustered_sentences:
                 clustered_sentences[cluster_id] = []
 
-            clustered_sentences[cluster_id].append(self.sentences[sentence_id])
+            clustered_sentences[cluster_id].append(
+                self.manager.bookmarks[sentence_id].title
+            )
 
         for i, cluster in clustered_sentences.items():
             print("Cluster ", i + 1)
@@ -52,7 +40,7 @@ class App:
 
     def visualize(self):
         pca = PCA(n_components=2)
-        self.embeddings_2d = pca.fit_transform(self.embeddings)
+        self.embeddings_2d = pca.fit_transform(self.manager.embeddings)
         print(self.embeddings_2d.shape)
         colors = plt.cm.rainbow(np.linspace(0, 1, self.n_clusters))
         print(colors)
@@ -61,7 +49,7 @@ class App:
         for i, (x, y) in enumerate(self.embeddings_2d):
             plt.scatter(x, y, color=colors[self.cluster_labels[i]])
             plt.text(
-                x + 0.01, y + 0.01, self.sentences[i], fontsize=9
+                x + 0.01, y + 0.01, self.manager.bookmarks[i].title, fontsize=9
             )  # Adjust text position and size
 
         plt.xlabel("Component 1")
@@ -109,5 +97,16 @@ def main():
     app.visualize3d()
 
 
+# if __name__ == "__main__":
+#     main()
+
+
 if __name__ == "__main__":
-    main()
+    manager = BookmarkManager()
+    manager.load("bookmarks_all.csv")
+    manager.load_embedding("embeddings.npy")
+
+    app = App(manager)
+    app.cluster()
+    app.show()
+    # app.visualize()
