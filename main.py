@@ -7,11 +7,11 @@ def read_html_file(path):
 
 
 def main():
-    # html_file_path = "bookmarks_12_30_23.html"
-    html_file_path = "test.html"
+    html_file_path = "bookmarks_12_30_23.html"
+    # html_file_path = "test.html"
     html_content = read_html_file(html_file_path)
     bookmark_manager = BookmarkManager()
-    bookmark_manager.load(html_content)
+    bookmark_manager.append(html_content)
     bookmark_manager.retrieve()
     # test = bookmark_manager.bookmarks[0]
     # test.retrieve()

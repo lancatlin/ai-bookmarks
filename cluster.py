@@ -5,7 +5,7 @@ from bookmark_manager import BookmarkManager
 
 class ClusterModel:
     def __init__(self):
-        self.model = AgglomerativeClustering(n_clusters=None, distance_threshold=3)
+        self.model = AgglomerativeClustering(n_clusters=None, distance_threshold=2)
 
     def fit(self, embeddings):
         self.model.fit(embeddings)

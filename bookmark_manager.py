@@ -17,12 +17,15 @@ class BookmarkManager:
     def append(self, source):
         soup = BeautifulSoup(source, "html.parser")
         Atags = soup.find_all("a")
+        bookmarks = set()
         for i in Atags:
             url = i.get("href", "")
             add_date = i.get("add_date", "")
             icon = i.get("icon", "")
             bookmark = Bookmark(url, date=add_date, icon=icon)
-            self.bookmarks.append(bookmark)
+            bookmarks.add(bookmark)
+
+        self.bookmarks.extend(bookmarks)
 
     def retrieve(self):
         tasks = [gevent.spawn(bookmark.retrieve) for bookmark in self.bookmarks]

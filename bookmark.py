@@ -10,6 +10,12 @@ class Bookmark:
         self.date = date
         self.icon = icon
 
+    def __eq__(self, other):
+        return self.url == other.url
+
+    def __hash__(self):
+        return hash(self.url)
+
     def crawl(self, timeout=15):
         response = requests.get(self.url, timeout=timeout)
         response.encoding = "utf-8"

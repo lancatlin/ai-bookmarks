@@ -79,31 +79,9 @@ class App:
         plt.show()
 
 
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "-e", "--embedding", help="Recalculate the embedding", action="store_true"
-    )
-    args = parser.parse_args()
-    file_name = "embeddings.npz"
-    app = App()
-    if args.embedding:
-        app.run(titles)
-        app.save(file_name)
-    else:
-        app.load(file_name)
-    app.cluster()
-    app.show()
-    app.visualize3d()
-
-
-# if __name__ == "__main__":
-#     main()
-
-
 if __name__ == "__main__":
     manager = BookmarkManager()
-    manager.load("bookmarks_all.csv")
+    manager.load("bookmarks_test.csv")
     manager.load_embedding("embeddings.npy")
 
     app = App(manager)

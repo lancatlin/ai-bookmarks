@@ -15,7 +15,7 @@ class Embedder:
 
 if __name__ == "__main__":
     manager = BookmarkManager()
-    manager.load("bookmarks_all.csv")
+    manager.load("bookmarks_test.csv")
     embedder = Embedder()
     embeddings = embedder.embed(manager.get_sentences())
     np.save("embeddings.npy", embeddings)
