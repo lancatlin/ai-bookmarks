@@ -36,7 +36,8 @@ class BookmarkManager:
 
             writer.writeheader()
             for bookmark in self.bookmarks:
-                writer.writerow(bookmark.export())
+                if bookmark.title != "" and bookmark.description != "":
+                    writer.writerow(bookmark.export())
             print("Done")
 
 
@@ -59,16 +60,15 @@ class Bookmarks:
                 self.title = meta["content"]
                 print(self.title)
             except TypeError:
-                self.title = self.url
+                self.title = ""
             try:
                 meta = soup.find("meta", {"property": "og:description"})
                 self.description = meta["content"]
                 print(self.description)
             except TypeError:
-                self.description = self.title
+                self.description = ""
         except Exception as e:
             print(f"Error fetching URL: {e}")
-            return None
 
     def export(self):
         return {
@@ -86,14 +86,14 @@ def read_html_file(path):
 
 
 def main():
-    html_file_path = "test.html"
+    html_file_path = "bookmarks_12_30_23.html"
     html_content = read_html_file(html_file_path)
     bookmark_manager = BookmarkManager()
     bookmark_manager.load(html_content)
     bookmark_manager.retrieve()
     # test = bookmark_manager.bookmarks[0]
     # test.retrieve()
-    bookmark_manager.export("bookmarks.csv")
+    bookmark_manager.export("bookmarks_all.csv")
 
 
 if __name__ == "__main__":
