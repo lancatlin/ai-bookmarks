@@ -6,6 +6,7 @@ monkey.patch_all()
 import asyncio
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 
 class BookmarkManager:
@@ -27,6 +28,16 @@ class BookmarkManager:
         results = gevent.joinall(tasks)
         for result in results:
             print("Completed access", result.value)
+
+    def export(self, file_name):
+        with open(file_name, "w") as csvfile:
+            fieldnames = ["url", "title", "description", "date", "icon"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            writer.writeheader()
+            for bookmark in self.bookmarks:
+                writer.writerow(bookmark.export())
+            print("Done")
 
 
 class Bookmarks:
@@ -59,6 +70,15 @@ class Bookmarks:
             print(f"Error fetching URL: {e}")
             return None
 
+    def export(self):
+        return {
+            "title": self.title,
+            "description": self.description,
+            "url": self.url,
+            "date": self.date,
+            "icon": self.icon,
+        }
+
 
 def read_html_file(path):
     with open(path, "r", encoding="cp950", errors="ignore") as file:
@@ -73,6 +93,7 @@ def main():
     bookmark_manager.retrieve()
     # test = bookmark_manager.bookmarks[0]
     # test.retrieve()
+    bookmark_manager.export("bookmarks.csv")
 
 
 if __name__ == "__main__":
