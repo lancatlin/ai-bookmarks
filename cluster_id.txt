@@ -1,0 +1,14 @@
+9 Dashboard, Monitoring 
+10 Vim, Terminal
+11 Blockchain
+12 Economic, Finance
+14 I3, Tiling Window Manager
+19 Golang
+21 Fedora
+22 Hugo
+27 Mozilla
+30 Arduino
+33 Linguistic
+36 Latex
+38 Likecoin
+39 UniSA

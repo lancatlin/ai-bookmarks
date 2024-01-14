@@ -1,4 +1,5 @@
 from sklearn.decomposition import PCA
+from sklearn.metrics import silhouette_samples
 import numpy as np
 import matplotlib.pyplot as plt
 import argparse
@@ -35,10 +36,15 @@ class App:
     def show(self):
         clustered_sentences = {}
         clustered_embeddings = {}
+        silhouette_vals = silhouette_samples(
+            self.manager.embeddings, self.cluster_labels
+        )
+        silhouette_result = {}
         for sentence_id, cluster_id in enumerate(self.cluster_labels):
             if cluster_id not in clustered_sentences:
                 clustered_sentences[cluster_id] = []
                 clustered_embeddings[cluster_id] = []
+                silhouette_result[cluster_id] = 0
 
             clustered_sentences[cluster_id].append(
                 self.manager.bookmarks[sentence_id].title
@@ -46,9 +52,12 @@ class App:
             clustered_embeddings[cluster_id].append(
                 self.manager.embeddings[sentence_id]
             )
+            silhouette_result[cluster_id] += silhouette_vals[sentence_id]
 
         for i, cluster in clustered_sentences.items():
-            print(f"Cluster {i}: std: {std_dev(clustered_embeddings[i])}")
+            print(
+                f"Cluster {i}: std: {std_dev(clustered_embeddings[i])}, silhouette: {silhouette_result[i] / len(cluster)}"
+            )
             print(cluster)
             print("")
 
