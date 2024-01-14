@@ -4,6 +4,7 @@ import numpy as np
 
 from bookmark_manager import BookmarkManager
 from lda import get_title
+from cluster_info import ClusterInfo
 
 
 def std_dev(embeddings):
@@ -30,37 +31,37 @@ class ClusterManager:
 
     def cluster(self):
         self.n_clusters, self.cluster_labels = self.fit(self.manager.embeddings)
-        self.manager.set_cluster(self.cluster_labels)
+        self.manager.set_clusters(self.cluster_labels)
 
-    def show(self):
-        clustered_sentences = {}
-        clustered_embeddings = {}
+        clustered_bookmarks = {}
         silhouette_vals = silhouette_samples(
             self.manager.embeddings, self.cluster_labels
         )
         silhouette_result = {}
         for sentence_id, cluster_id in enumerate(self.cluster_labels):
-            if cluster_id not in clustered_sentences:
-                clustered_sentences[cluster_id] = []
-                clustered_embeddings[cluster_id] = []
+            if cluster_id not in clustered_bookmarks:
+                clustered_bookmarks[cluster_id] = []
                 silhouette_result[cluster_id] = 0
 
-            clustered_sentences[cluster_id].append(
-                self.manager.bookmarks[sentence_id].title
-            )
-            clustered_embeddings[cluster_id].append(
-                self.manager.embeddings[sentence_id]
-            )
+            clustered_bookmarks[cluster_id].append(self.manager.bookmarks[sentence_id])
             silhouette_result[cluster_id] += silhouette_vals[sentence_id]
 
-        for i, cluster in clustered_sentences.items():
+        clusters = []
+        for i, bookmarks in clustered_bookmarks.items():
             cluster_sentences = self.manager.get_sentences(cluster=i)
             title = get_title(cluster_sentences)
-            print(
-                f"Cluster {i} {title}: std: {std_dev(clustered_embeddings[i])}, silhouette: {silhouette_result[i] / len(cluster)}"
+            silhouette_score = silhouette_result[i] / len(bookmarks)
+            clusters.append(
+                ClusterInfo(i, bookmarks, title=title, score=silhouette_score)
             )
+
+        clusters.sort(key=lambda x: x.score, reverse=True)
+        self.manager.set_cluster_info(clusters)
+
+    def show(self):
+        for cluster in self.manager.clusters:
             print(cluster)
-            print("")
+            print()
 
 
 if __name__ == "__main__":
@@ -70,4 +71,5 @@ if __name__ == "__main__":
 
     cluster = ClusterManager(manager)
     cluster.cluster()
+    manager.export_clusters("clusters.csv")
     cluster.show()

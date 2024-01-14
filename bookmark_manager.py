@@ -5,8 +5,10 @@ monkey.patch_all()
 
 from bs4 import BeautifulSoup
 import csv
-from bookmark import Bookmark
 import numpy as np
+
+from bookmark import Bookmark
+from cluster_info import ClusterInfo
 
 
 class BookmarkManager:
@@ -14,6 +16,7 @@ class BookmarkManager:
         self.bookmarks: list[Bookmark] = []
         self.bookmarks_set: set[Bookmark] = set()
         self.embeddings = None
+        self.clusters: list[ClusterInfo] = []
 
     def append(self, source):
         soup = BeautifulSoup(source, "html.parser")
@@ -42,6 +45,13 @@ class BookmarkManager:
                     self.bookmarks_set.add(bookmark)
                     self.bookmarks.append(bookmark)
 
+    def load_clusters(self, file_name):
+        with open(file_name, "r") as csvfile:
+            reader = csv.DictReader(csvfile)
+            for row in reader:
+                cluster = ClusterInfo(**row)
+                self.clusters.append(cluster)
+
     def load_embedding(self, file_name):
         self.embeddings = np.load(file_name)
 
@@ -54,6 +64,16 @@ class BookmarkManager:
             for bookmark in self.bookmarks:
                 if bookmark.title != "" and bookmark.description != "":
                     writer.writerow(bookmark.export())
+            print("Done")
+
+    def export_clusters(self, file_name):
+        with open(file_name, "w") as csvfile:
+            fieldnames = ["id", "title", "score"]
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+            writer.writeheader()
+            for cluster in self.clusters:
+                writer.writerow(cluster.export())
             print("Done")
 
     def export_failed(self, file_name):
@@ -74,6 +94,9 @@ class BookmarkManager:
                 sentences.append(f"{bookmark.title} {bookmark.description}")
         return sentences
 
-    def set_cluster(self, cluster_labels):
+    def set_clusters(self, cluster_labels: list[int]):
         for i, label in enumerate(cluster_labels):
             self.bookmarks[i].set_cluster(label)
+
+    def set_cluster_info(self, clusters: list[ClusterInfo]):
+        self.clusters = clusters
