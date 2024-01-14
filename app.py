@@ -8,6 +8,7 @@ from titles import titles
 
 from cluster import ClusterModel
 from bookmark_manager import BookmarkManager
+from lda import get_title
 
 
 def std_dev(embeddings):
@@ -55,8 +56,10 @@ class App:
             silhouette_result[cluster_id] += silhouette_vals[sentence_id]
 
         for i, cluster in clustered_sentences.items():
+            cluster_sentences = self.manager.get_sentences(cluster=i)
+            title = get_title(cluster_sentences)
             print(
-                f"Cluster {i}: std: {std_dev(clustered_embeddings[i])}, silhouette: {silhouette_result[i] / len(cluster)}"
+                f"Cluster {i} {title}: std: {std_dev(clustered_embeddings[i])}, silhouette: {silhouette_result[i] / len(cluster)}"
             )
             print(cluster)
             print("")
@@ -108,6 +111,6 @@ if __name__ == "__main__":
 
     app = App(manager)
     app.cluster()
-    manager.export("bookmarks_cluster2.csv")
+    manager.export("bookmarks_cluster3.csv")
     app.show()
-    app.visualize3d()
+    # app.visualize3d()

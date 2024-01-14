@@ -67,10 +67,11 @@ class BookmarkManager:
                     writer.writerow(bookmark.export())
             print("Done")
 
-    def get_sentences(self):
+    def get_sentences(self, cluster=-1):
         sentences = []
         for bookmark in self.bookmarks:
-            sentences.append(f"{bookmark.title} {bookmark.description}")
+            if cluster == -1 or bookmark.cluster == cluster:
+                sentences.append(f"{bookmark.title} {bookmark.description}")
         return sentences
 
     def set_cluster(self, cluster_labels):

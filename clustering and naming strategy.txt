@@ -1,0 +1,17 @@
+Clustering and Naming Strategy
+
+1. All LDA - clustering and naming the group
+
+result:
+
+2. Clustering do the clurstering while LDA do the naming and clustering, then find
+
+the most common topic towards each group   
+
+result:
+
+3. Clustering first and LDA naming each clustered group. Topic candidates - 5, recurse the 
+topics back to the center of the clustered group, the min distance came the OFFICIAL TOPIC.
+result:
+log3.txt
+conclusion: 第一個topic不一定最佳，topic生成部分精確
