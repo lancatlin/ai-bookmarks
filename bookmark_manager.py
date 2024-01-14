@@ -12,20 +12,20 @@ import numpy as np
 class BookmarkManager:
     def __init__(self):
         self.bookmarks: list[Bookmark] = []
+        self.bookmarks_set: set[Bookmark] = set()
         self.embeddings = None
 
     def append(self, source):
         soup = BeautifulSoup(source, "html.parser")
         Atags = soup.find_all("a")
-        bookmarks = set()
         for i in Atags:
             url = i.get("href", "")
             add_date = i.get("add_date", "")
             icon = i.get("icon", "")
             bookmark = Bookmark(url, date=add_date, icon=icon)
-            bookmarks.add(bookmark)
-
-        self.bookmarks.extend(bookmarks)
+            if bookmark not in self.bookmarks_set:
+                self.bookmarks_set.add(bookmark)
+                self.bookmarks.append(bookmark)
 
     def retrieve(self):
         tasks = [gevent.spawn(bookmark.retrieve) for bookmark in self.bookmarks]
@@ -38,14 +38,16 @@ class BookmarkManager:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 bookmark = Bookmark(**row)
-                self.bookmarks.append(bookmark)
+                if bookmark not in self.bookmarks_set:
+                    self.bookmarks_set.add(bookmark)
+                    self.bookmarks.append(bookmark)
 
     def load_embedding(self, file_name):
         self.embeddings = np.load(file_name)
 
     def export(self, file_name):
         with open(file_name, "w") as csvfile:
-            fieldnames = ["url", "title", "description", "date", "icon"]
+            fieldnames = ["url", "title", "description", "date", "icon", "cluster"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
             writer.writeheader()
@@ -70,3 +72,7 @@ class BookmarkManager:
         for bookmark in self.bookmarks:
             sentences.append(f"{bookmark.title} {bookmark.description}")
         return sentences
+
+    def set_cluster(self, cluster_labels):
+        for i, label in enumerate(cluster_labels):
+            self.bookmarks[i].set_cluster(label)

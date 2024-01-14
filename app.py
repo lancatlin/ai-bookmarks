@@ -9,6 +9,14 @@ from cluster import ClusterModel
 from bookmark_manager import BookmarkManager
 
 
+def std_dev(embeddings):
+    center = np.mean(embeddings, axis=0)
+    print(center.shape)
+    distances = np.sqrt(((embeddings - center) ** 2).sum(axis=1))
+    print(distances.shape)
+    return np.std(distances)
+
+
 class App:
     def __init__(self, manager: BookmarkManager):
         self.manager = manager
@@ -22,19 +30,25 @@ class App:
         self.n_clusters, self.cluster_labels = self.clusterModel.fit(
             self.manager.embeddings
         )
+        self.manager.set_cluster(self.cluster_labels)
 
     def show(self):
         clustered_sentences = {}
+        clustered_embeddings = {}
         for sentence_id, cluster_id in enumerate(self.cluster_labels):
             if cluster_id not in clustered_sentences:
                 clustered_sentences[cluster_id] = []
+                clustered_embeddings[cluster_id] = []
 
             clustered_sentences[cluster_id].append(
                 self.manager.bookmarks[sentence_id].title
             )
+            clustered_embeddings[cluster_id].append(
+                self.manager.embeddings[sentence_id]
+            )
 
         for i, cluster in clustered_sentences.items():
-            print("Cluster ", i + 1)
+            print(f"Cluster {i}: std: {std_dev(clustered_embeddings[i])}")
             print(cluster)
             print("")
 
@@ -48,9 +62,9 @@ class App:
         # plt.scatter(self.embeddings_2d[:, 0], self.embeddings_2d[:, 1], alpha=0.5)
         for i, (x, y) in enumerate(self.embeddings_2d):
             plt.scatter(x, y, color=colors[self.cluster_labels[i]])
-            plt.text(
-                x + 0.01, y + 0.01, self.manager.bookmarks[i].title, fontsize=9
-            )  # Adjust text position and size
+            # plt.text(
+            #     x + 0.01, y + 0.01, self.manager.bookmarks[i].title, fontsize=9
+            # )  # Adjust text position and size
 
         plt.xlabel("Component 1")
         plt.ylabel("Component 2")
@@ -59,18 +73,17 @@ class App:
 
     def visualize3d(self):
         pca = PCA(n_components=3)
-        self.embeddings_3d = pca.fit_transform(self.embeddings)
+        self.embeddings_3d = pca.fit_transform(self.manager.embeddings[:100])
         print(self.embeddings_3d.shape)
         colors = plt.cm.rainbow(np.linspace(0, 1, self.n_clusters))
-        print(colors)
         fig = plt.figure()
         ax = fig.add_subplot(projection="3d")
 
         for i, (x, y, z) in enumerate(self.embeddings_3d):
             ax.scatter(x, y, z, color=colors[self.cluster_labels[i]])
-            ax.text(
-                x + 0.01, y + 0.01, z + 0.01, self.sentences[i], fontsize=9
-            )  # Adjust text position and size
+            # ax.text(
+            #     x + 0.01, y + 0.01, z + 0.01, self.sentences[i], fontsize=9
+            # )  # Adjust text position and size
 
         ax.set_xlabel("Component 1")
         ax.set_ylabel("Component 2")
@@ -86,5 +99,6 @@ if __name__ == "__main__":
 
     app = App(manager)
     app.cluster()
+    manager.export("bookmarks_cluster2.csv")
     app.show()
-    # app.visualize()
+    app.visualize3d()

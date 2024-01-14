@@ -3,12 +3,14 @@ import requests
 
 
 class Bookmark:
-    def __init__(self, url, title="", description="", date="", icon=""):
+    def __init__(self, url, title="", description="", date="", icon="", cluster=-1):
         self.url = url
         self.title = title
         self.description = description
         self.date = date
         self.icon = icon
+        self.embedding = None
+        self.cluster = cluster
 
     def __eq__(self, other):
         return self.url == other.url
@@ -43,4 +45,8 @@ class Bookmark:
             "url": self.url,
             "date": self.date,
             "icon": self.icon,
+            "cluster": self.cluster,
         }
+
+    def set_cluster(self, cluster):
+        self.cluster = cluster
