@@ -2,5 +2,4 @@
 .venv
 *.npz
 __pycache__
-*.csv
 *.npy
