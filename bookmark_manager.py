@@ -100,3 +100,6 @@ class BookmarkManager:
 
     def set_cluster_info(self, clusters: list[ClusterInfo]):
         self.clusters = clusters
+
+    def n_clusters(self):
+        return len(self.clusters)

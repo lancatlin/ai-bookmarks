@@ -19,7 +19,7 @@ class Bookmark:
         self.date = date
         self.icon = icon
         self.embedding = embedding
-        self.cluster = cluster
+        self.cluster = int(cluster)
 
     def __eq__(self, other):
         return self.url == other.url

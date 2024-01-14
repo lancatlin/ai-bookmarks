@@ -1,5 +1,5 @@
 class ClusterInfo:
-    def __init__(self, id, bookmarks, title="", score=0):
+    def __init__(self, id, bookmarks=[], title="", score=0):
         self.id = id
         self.bookmarks: list[Bookmark] = bookmarks
         self.title = title
