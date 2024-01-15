@@ -166,7 +166,7 @@ def parse_args():
         "--template_file",
         type=str,
         help="Path to the template file.",
-        default="template.html",
+        default="template/bookmarks.html",
     )
     render_parser.set_defaults(func=run_render)
 
