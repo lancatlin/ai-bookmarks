@@ -7,7 +7,7 @@ from cluster_info import ClusterInfo
 
 
 class LDACluster:
-    def __init__(self, manager: BookmarkManager, n_topics=15):
+    def __init__(self, manager: BookmarkManager, n_topics=8):
         self.manager = manager
         self.count_vectorizer = CountVectorizer(stop_words="english")
         self.doc_term_matrix = None
