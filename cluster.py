@@ -74,14 +74,9 @@ class ClusterManager:
     def select_title(self, cluster: ClusterInfo):
         topics = get_topics(cluster)
         print("topics", topics)
-
         vectors = self.manager.embeddings[self.cluster_labels == cluster.id]
-
         mean = np.mean(vectors, axis=0)
-
         topic_vectors = self.embedder.embed(topics)
-
         similarities = cosine_similarity([mean], topic_vectors)[0]
-
         closest_topic = np.argmax(similarities)
         return topics[closest_topic]
