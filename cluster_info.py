@@ -10,7 +10,7 @@ class ClusterInfo(BookmarkSet):
 
     def __str__(self):
         result = f"Cluster {self.id}: {self.title} ({self.score})"
-        for bookmark in self.bookmarks:
+        for bookmark in self.bookmarks[:5]:
             result += f"\n\t{bookmark.title}: {bookmark.url}"
         return result
 

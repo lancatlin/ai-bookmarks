@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark Clusters</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .cluster {
+        margin-bottom: 20px;
+      }
+      .bookmark {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    {% for cluster in clusters %}
+    <div class="cluster">
+      <h2>
+        Cluster {{ cluster.id }}: {{ cluster.title }} (Score: {{ cluster.score
+        }})
+      </h2>
+      {% for bookmark in cluster.bookmarks[:5] %}
+      <div class="bookmark">
+        <a href="{{ bookmark.url }}" target="_blank">{{ bookmark.title }}</a>
+        <p>{{ bookmark.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </body>
+</html>

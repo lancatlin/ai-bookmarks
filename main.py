@@ -85,6 +85,19 @@ def run_select_clusters(args):
     manager.export(args.save_file, lambda x: x.cluster in args.clusters)
 
 
+def run_render(args):
+    print("Running render")
+    from render import generate_html_page
+
+    manager = BookmarkManager()
+    manager.load(args.csv_file)
+    manager.load_clusters(args.cluster_path)
+
+    generate_html_page(
+        manager.clusters, template_file=args.template_file, output_file=args.output_file
+    )
+
+
 def run_all(args):
     run_crawler(args)
     run_embedder(args)
@@ -146,6 +159,16 @@ def parse_args():
 
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)
+
+    render_parser = subcmd.add_parser("render", help="Render the clusters.")
+    render_parser.add_argument("output_file", type=str, help="Path to the output file.")
+    render_parser.add_argument(
+        "--template_file",
+        type=str,
+        help="Path to the template file.",
+        default="template.html",
+    )
+    render_parser.set_defaults(func=run_render)
 
     run_all_parser = subcmd.add_parser("run", help="Run all.")
     run_all_parser.add_argument(
