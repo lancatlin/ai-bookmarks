@@ -48,12 +48,8 @@ class ClusterManager:
 
         clusters = []
         for i, bookmarks in clustered_bookmarks.items():
-            cluster_sentences = self.manager.get_sentences(cluster=i)
-            title = get_title(cluster_sentences)
             silhouette_score = silhouette_result[i] / len(bookmarks)
-            clusters.append(
-                ClusterInfo(i, bookmarks, title=title, score=silhouette_score)
-            )
+            clusters.append(ClusterInfo(i, bookmarks, score=silhouette_score))
 
         clusters.sort(key=lambda x: x.score, reverse=True)
         self.manager.set_cluster_info(clusters)

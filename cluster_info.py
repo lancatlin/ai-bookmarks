@@ -1,7 +1,10 @@
-class ClusterInfo:
+from bookmark_set import BookmarkSet
+
+
+class ClusterInfo(BookmarkSet):
     def __init__(self, id, bookmarks=[], title="", score=0):
-        self.id = id
-        self.bookmarks: list[Bookmark] = bookmarks
+        super().__init__(bookmarks)
+        self.id = int(id)
         self.title = title
         self.score = score
 

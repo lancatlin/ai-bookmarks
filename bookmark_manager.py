@@ -2,36 +2,37 @@ import csv
 import numpy as np
 
 from bookmark import Bookmark
+from bookmark_set import BookmarkSet
 from cluster_info import ClusterInfo
 
 
-class BookmarkManager:
+class BookmarkManager(BookmarkSet):
     def __init__(self):
-        self.bookmarks: list[Bookmark] = []
-        self.bookmarks_set: set[Bookmark] = set()
+        super().__init__()
         self.embeddings = None
-        self.clusters: list[ClusterInfo] = []
-
-    def add(self, bookmark: Bookmark):
-        if bookmark not in self.bookmarks_set:
-            self.bookmarks_set.add(bookmark)
-            self.bookmarks.append(bookmark)
+        # clusters is a dictionary of cluster_id -> ClusterInfo
+        self.clusters: dict[int, ClusterInfo] = {}
 
     def load(self, file_name):
         with open(file_name, "r") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 bookmark = Bookmark(**row)
-                if bookmark not in self.bookmarks_set:
-                    self.bookmarks_set.add(bookmark)
-                    self.bookmarks.append(bookmark)
+                self.add(bookmark)
+
+                if bookmark.cluster >= 0:
+                    if bookmark.cluster not in self.clusters:
+                        self.clusters[bookmark.cluster] = ClusterInfo(bookmark.cluster)
+                    self.clusters[bookmark.cluster].add(bookmark)
 
     def load_clusters(self, file_name):
         with open(file_name, "r") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 cluster = ClusterInfo(**row)
-                self.clusters.append(cluster)
+                if cluster.id in self.clusters:
+                    cluster.bookmarks = self.clusters[cluster.id].bookmarks
+                self.clusters[cluster.id] = cluster
 
     def load_embedding(self, file_name):
         self.embeddings = np.load(file_name)
@@ -67,13 +68,6 @@ class BookmarkManager:
                 if bookmark.title == "" or bookmark.description == "":
                     writer.writerow(bookmark.export())
             print("Done")
-
-    def get_sentences(self, cluster=-1):
-        sentences = []
-        for bookmark in self.bookmarks:
-            if cluster == -1 or bookmark.cluster == cluster:
-                sentences.append(f"{bookmark.title} {bookmark.description}")
-        return sentences
 
     def set_clusters(self, cluster_labels: list[int]):
         for i, label in enumerate(cluster_labels):
