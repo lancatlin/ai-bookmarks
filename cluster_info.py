@@ -14,6 +14,10 @@ class ClusterInfo(BookmarkSet):
             result += f"\n\t{bookmark.title}: {bookmark.url}"
         return result
 
+    def __repr__(self):
+        result = f"Cluster {self.id}: {self.title} ({self.score}) - {len(self.bookmarks)} bookmarks"
+        return result
+
     def export(self):
         return {
             "id": self.id,

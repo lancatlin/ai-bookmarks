@@ -41,6 +41,22 @@ def run_cluster(args):
     cluster.show()
 
 
+def run_labeler(args):
+    print("Running labeler")
+    from cluster_labeler import ClusterLabeler
+
+    manager = BookmarkManager()
+    manager.load(args.csv_file)
+    manager.load_embedding(args.embedding_path)
+    manager.load_clusters(args.cluster_path)
+
+    labeler = ClusterLabeler()
+    for cluster in manager.clusters:
+        label = labeler.label(cluster)
+        print(cluster)
+    manager.export_clusters(args.cluster_path)
+
+
 def run_visualizer(args):
     print("Running visualizer")
     from visualizer import Visualizer
@@ -58,6 +74,7 @@ def run_all(args):
     run_crawler(args)
     run_embedder(args)
     run_cluster(args)
+    run_labeler(args)
     run_visualizer(args)
 
 
@@ -101,6 +118,9 @@ def parse_args():
 
     cluster_parser = subcmd.add_parser("cluster", help="Run the cluster.")
     cluster_parser.set_defaults(func=run_cluster)
+
+    labeler_parser = subcmd.add_parser("label", help="Run the labeler.")
+    labeler_parser.set_defaults(func=run_labeler)
 
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)

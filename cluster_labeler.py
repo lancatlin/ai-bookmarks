@@ -1,9 +1,12 @@
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import LatentDirichletAllocation
+
 from cluster_info import ClusterInfo
 from embedder import Embedder
 
 
 class ClusterLabeler:
-    def __init__(self, embedder: Embedder):
+    def __init__(self, embedder: Embedder = None):
         # self.embedder = embedder
         pass
 

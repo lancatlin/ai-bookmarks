@@ -11,7 +11,7 @@ class BookmarkManager(BookmarkSet):
         super().__init__()
         self.embeddings = None
         # clusters is a dictionary of cluster_id -> ClusterInfo
-        self.clusters: dict[int, ClusterInfo] = {}
+        self.clusters: list[ClusterInfo] = []
 
     def load(self, file_name):
         with open(file_name, "r") as csvfile:
@@ -20,19 +20,17 @@ class BookmarkManager(BookmarkSet):
                 bookmark = Bookmark(**row)
                 self.add(bookmark)
 
-                if bookmark.cluster >= 0:
-                    if bookmark.cluster not in self.clusters:
-                        self.clusters[bookmark.cluster] = ClusterInfo(bookmark.cluster)
-                    self.clusters[bookmark.cluster].add(bookmark)
-
     def load_clusters(self, file_name):
         with open(file_name, "r") as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
                 cluster = ClusterInfo(**row)
-                if cluster.id in self.clusters:
-                    cluster.bookmarks = self.clusters[cluster.id].bookmarks
-                self.clusters[cluster.id] = cluster
+                cluster.bookmarks = [
+                    bookmark
+                    for bookmark in self.bookmarks
+                    if bookmark.cluster == cluster.id
+                ]
+                self.clusters.append(cluster)
 
     def load_embedding(self, file_name):
         self.embeddings = np.load(file_name)
