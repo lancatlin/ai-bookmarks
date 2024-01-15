@@ -2,7 +2,7 @@ from bookmark_set import BookmarkSet
 
 
 class ClusterInfo(BookmarkSet):
-    def __init__(self, id, bookmarks=[], title="", score=0):
+    def __init__(self, id, bookmarks=None, title="", score=0):
         super().__init__(bookmarks)
         self.id = int(id)
         self.title = title

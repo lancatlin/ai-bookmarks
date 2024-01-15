@@ -2,7 +2,9 @@ from bookmark import Bookmark
 
 
 class BookmarkSet:
-    def __init__(self, bookmarks=[]):
+    def __init__(self, bookmarks=None):
+        if bookmarks is None:
+            bookmarks = []
         self.bookmarks: list[Bookmark] = bookmarks
         self.bookmarks_set: set[Bookmark] = set(bookmarks)
 

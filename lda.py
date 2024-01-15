@@ -1,30 +1,52 @@
+import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import LatentDirichletAllocation
 
 from bookmark_manager import BookmarkManager
+from cluster_info import ClusterInfo
 
 
-def get_title(documents: list[str]):
-    # Create a CountVectorizer for parsing/counting words
-    count_vectorizer = CountVectorizer(stop_words="english")
-    doc_term_matrix = count_vectorizer.fit_transform(documents)
+class LDACluster:
+    def __init__(self, manager: BookmarkManager, n_topics=15):
+        self.manager = manager
+        self.count_vectorizer = CountVectorizer(stop_words="english")
+        self.doc_term_matrix = None
+        self.n_topics = n_topics
+        self.lda = LatentDirichletAllocation(n_components=n_topics, random_state=0)
+        self.cluster_labels = None
 
-    # Number of topics
-    n_topics = 1
+    def fit(self):
+        self.doc_term_matrix = self.count_vectorizer.fit_transform(
+            self.manager.get_sentences()
+        )
+        self.lda.fit(self.doc_term_matrix)
 
-    # Create and fit LDA model
-    lda = LatentDirichletAllocation(n_components=n_topics, random_state=0)
-    lda.fit(doc_term_matrix)
+    def cluster(self):
+        # Transform the doc-term matrix to document-topic matrix
+        doc_topic_matrix = self.lda.transform(self.doc_term_matrix)
 
-    def get_topics(model, count_vectorizer, n_top_words):
-        words = count_vectorizer.get_feature_names_out()
-        result = []
-        for topic_idx, topic in enumerate(model.components_):
-            result.append(
-                " ".join([words[i] for i in topic.argsort()[: -n_top_words - 1 : -1]])
-            )
-        return result
+        # Assign the cluster as the topic with the highest probability
+        self.cluster_labels = np.argmax(doc_topic_matrix, axis=1)
 
-    # Print the topics found by the LDA model
-    topics = get_topics(lda, count_vectorizer, n_top_words=5)
-    return topics[0]
+        # Return cluster labels
+        return self.cluster_labels
+
+    def get_cluster_titles(self, n_top_words=5):
+        feature_names = self.count_vectorizer.get_feature_names_out()
+        cluster_titles = []
+        for topic_idx, topic in enumerate(self.lda.components_):
+            top_indices = topic.argsort()[-n_top_words:]
+            top_words = [feature_names[i] for i in top_indices]
+            title = " ".join(top_words)
+            cluster_titles.append(title)
+        return cluster_titles
+
+    def get_cluster_sentences(self):
+        """
+        Optionally, provide a method to retrieve the sentences in each cluster.
+        """
+        titles = self.get_cluster_titles()
+        clusters = {i: ClusterInfo(i, title=titles[i]) for i in range(self.n_topics)}
+        for bookmark, label in zip(self.manager.bookmarks, self.cluster_labels):
+            clusters[label].add(bookmark)
+        return clusters

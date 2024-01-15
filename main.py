@@ -43,6 +43,27 @@ def run_cluster(args):
     cluster.show()
 
 
+def run_lda(args):
+    print(f"Cluster bookmarks from {args.csv_file}")
+
+    from lda import LDACluster
+
+    manager = BookmarkManager()
+    manager.load(args.csv_file)
+    manager.load_embedding(args.embedding_path)
+
+    cluster = LDACluster(manager)
+    cluster.fit()
+    labels = cluster.cluster()
+    clusters = cluster.get_cluster_sentences()
+    for i, cluster in clusters.items():
+        print(cluster)
+        print()
+        # print(f"Cluster {k}, {labels[k]}")
+        # for v in v[:10]:
+        #     print("\t", v)
+
+
 def run_visualizer(args):
     print("Running visualizer")
     from visualizer import Visualizer
@@ -103,6 +124,9 @@ def parse_args():
 
     cluster_parser = subcmd.add_parser("cluster", help="Run the cluster.")
     cluster_parser.set_defaults(func=run_cluster)
+
+    lda_parser = subcmd.add_parser("lda", help="Run the cluster.")
+    lda_parser.set_defaults(func=run_lda)
 
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)
