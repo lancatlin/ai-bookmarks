@@ -1,9 +1,3 @@
-import gevent
-from gevent import monkey
-
-monkey.patch_all()
-
-from bs4 import BeautifulSoup
 import csv
 import numpy as np
 
@@ -18,23 +12,10 @@ class BookmarkManager:
         self.embeddings = None
         self.clusters: list[ClusterInfo] = []
 
-    def append(self, source):
-        soup = BeautifulSoup(source, "html.parser")
-        Atags = soup.find_all("a")
-        for i in Atags:
-            url = i.get("href", "")
-            add_date = i.get("add_date", "")
-            icon = i.get("icon", "")
-            bookmark = Bookmark(url, date=add_date, icon=icon)
-            if bookmark not in self.bookmarks_set:
-                self.bookmarks_set.add(bookmark)
-                self.bookmarks.append(bookmark)
-
-    def retrieve(self):
-        tasks = [gevent.spawn(bookmark.retrieve) for bookmark in self.bookmarks]
-        results = gevent.joinall(tasks)
-        for result in results:
-            print("Completed access", result.value)
+    def add(self, bookmark: Bookmark):
+        if bookmark not in self.bookmarks_set:
+            self.bookmarks_set.add(bookmark)
+            self.bookmarks.append(bookmark)
 
     def load(self, file_name):
         with open(file_name, "r") as csvfile:

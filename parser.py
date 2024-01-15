@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from sanitizer import sanitize_output
 
 
 class Parser:
@@ -6,6 +7,7 @@ class Parser:
         self.html = html
         self.soup = BeautifulSoup(html, "html.parser")
 
+    @sanitize_output
     def get_title(self):
         try:
             meta = self.soup.find("meta", {"property": "og:title"})
@@ -20,6 +22,7 @@ class Parser:
             print("Error", err)
             return ""
 
+    @sanitize_output
     def get_description(self):
         try:
             meta = self.soup.find("meta", {"property": "og:description"})
