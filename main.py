@@ -2,10 +2,6 @@ import argparse
 from bookmark_manager import BookmarkManager
 
 
-def run_all(args):
-    print("Running all")
-
-
 def run_crawler(args):
     print(f"Import bookmarks from {args.bookmark_file}")
     from crawler import Crawler
@@ -58,6 +54,13 @@ def run_visualizer(args):
     visualizer.visualize()
 
 
+def run_all(args):
+    run_crawler(args)
+    run_embedder(args)
+    run_cluster(args)
+    run_visualizer(args)
+
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Process and visualize bookmark data.")
     parser.add_argument(
@@ -102,13 +105,23 @@ def parse_args():
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)
 
-    return parser.parse_args()
+    run_all_parser = subcmd.add_parser("run", help="Run all.")
+    run_all_parser.add_argument(
+        "bookmark_file", type=str, help="Path to the bookmark file."
+    )
+    run_all_parser.set_defaults(func=run_all)
+
+    return parser
 
 
 def main():
-    args = parse_args()
+    parser = parse_args()
+    args = parser.parse_args()
     if hasattr(args, "func"):
         args.func(args)
+    else:
+        # showing help
+        parser.print_help()
 
 
 if __name__ == "__main__":

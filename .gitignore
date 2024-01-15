@@ -1,5 +1,3 @@
 *.html
 .venv
-*.npz
 __pycache__
-*.npy
