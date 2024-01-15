@@ -15,7 +15,7 @@ def main():
     bookmark_manager.retrieve()
     # test = bookmark_manager.bookmarks[0]
     # test.retrieve()
-    bookmark_manager.export("bookmarks_test.csv")
+    bookmark_manager.export("data/bookmarks_test.csv")
     # bookmark_manager.export_failed("bookmarks_failed.csv")
 
 

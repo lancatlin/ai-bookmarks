@@ -51,9 +51,9 @@ class Visualizer:
 
 if __name__ == "__main__":
     manager = BookmarkManager()
-    manager.load("bookmarks_cluster.csv")
-    manager.load_embedding("embeddings.npy")
-    manager.load_clusters("clusters.csv")
+    manager.load("data/bookmarks_cluster.csv")
+    manager.load_embedding("data/embeddings.npy")
+    manager.load_clusters("data/clusters.csv")
 
     visualizer = Visualizer(manager)
     visualizer.visualize()

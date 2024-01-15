@@ -66,10 +66,10 @@ class ClusterManager:
 
 if __name__ == "__main__":
     manager = BookmarkManager()
-    manager.load("bookmarks_test.csv")
-    manager.load_embedding("embeddings.npy")
+    manager.load("data/bookmarks_test.csv")
+    manager.load_embedding("data/embeddings.npy")
 
     cluster = ClusterManager(manager)
     cluster.cluster()
-    manager.export_clusters("clusters.csv")
+    manager.export_clusters("data/clusters.csv")
     cluster.show()
