@@ -57,14 +57,3 @@ class Crawler:
 
         except Exception as e:
             print(f"Error fetching URL: {e}")
-
-
-if __name__ == "__main__":
-    # html_file_path = "bookmarks_12_30_23.html"
-    html_file_path = "test.html"
-    manager = BookmarkManager()
-
-    crawler = Crawler(manager)
-    crawler.parse(html_file_path)
-    crawler.retrieve()
-    manager.export("data/bookmarks_test2.csv")

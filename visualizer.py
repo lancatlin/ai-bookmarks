@@ -47,13 +47,3 @@ class Visualizer:
         ax.set_zlabel("Component 3")
         plt.title("3D Visualization of Sentence Embeddings")
         plt.show()
-
-
-if __name__ == "__main__":
-    manager = BookmarkManager()
-    manager.load("data/bookmarks_cluster.csv")
-    manager.load_embedding("data/embeddings.npy")
-    manager.load_clusters("data/clusters.csv")
-
-    visualizer = Visualizer(manager)
-    visualizer.visualize()
