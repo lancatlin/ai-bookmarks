@@ -1,0 +1,1001 @@
+Cluster bookmarks from data/bookmarks.csv
+topics ['dropbox', '00', 'key', 'pdf', 'gpg', 'api', 'convert', 'backup', 'github', 'file']
+vectors (15, 384)
+topics (10, 384)
+distances [0.9495583  1.0530071  1.0285392  0.95235467 1.0395597  0.9746513
+ 1.0085475  1.0387905  0.93151367 0.96380633]
+topics ['duplicity', 'select', 'values', 'copy', 'like', 'postgres', 'database', 'set', 'restrict', 'zsh']
+vectors (10, 384)
+topics (10, 384)
+distances [1.012576   0.97014827 1.0750467  1.0089474  1.0584413  1.0086037
+ 1.0079631  1.077043   1.0250407  0.97334754]
+topics ['vim', 'github', 'completion', 'plugin', 'menu', 'development', 'tutorial', 'files', 'ranger', 'contribute']
+vectors (10, 384)
+topics (10, 384)
+distances [0.74384195 1.0380815  1.1013124  1.0080158  1.0939922  1.1261425
+ 1.0670041  1.0515991  1.138328   1.1265527 ]
+topics ['語言', 'cinema', '人權juice果汁機', '閩南語', 'line', 'google', '朱家安', '介紹', 'dolby', 'atmos']
+vectors (28, 384)
+topics (10, 384)
+distances [1.0643743 1.2226561 0.9804145 0.9432834 1.2060925 1.1607758 1.0155678
+ 1.0469587 1.2289029 1.2379891]
+topics ['google', 'account', 'landchad', 'server', 'domain', 'website', 'matrix', 'page', 'finance', 'use']
+vectors (29, 384)
+topics (10, 384)
+distances [0.8976507 0.9635888 0.9349515 0.9058955 0.9321537 0.8835825 1.0554508
+ 0.9658094 0.9842976 0.9467352]
+topics ['rss', 'hexo', 'yoyohand', 'linux', '挑戰手機市場最低價', 'css', '規格', '跑分', 'tiny', 'twd']
+vectors (41, 384)
+topics (10, 384)
+distances [1.1427089  1.1054534  1.1126692  1.1501282  0.8095933  1.0730925
+ 0.95175993 0.9204159  1.1489189  1.1803042 ]
+topics ['audio', 'music', 'instruments', 'plugins', 'free', 'pitch', 'software', 'set', 'bench', 'drum']
+vectors (20, 384)
+topics (10, 384)
+distances [0.79277545 0.8263215  0.81094366 0.9668473  0.9947478  0.9842566
+ 0.954928   1.0645329  1.079033   0.93703884]
+topics ['jack', 'configure', 'linux', 'realtime', 'use', 'connection', 'pppoe', 'audio', 'allow', 'kit']
+vectors (6, 384)
+topics (10, 384)
+distances [1.0959383 0.9240853 1.0744041 1.1005337 1.1870937 1.051591  1.0842499
+ 1.1114559 1.1713517 1.1730471]
+topics ['07', 'audio', 'https', '萬千花蕊慈母悲哀', '魔鏡歌詞網', '我們請到了謝震廷老師', '分類詳細', '凱翔老師', '歷年專輯歌詞', '巴奈']
+vectors (15, 384)
+topics (10, 384)
+distances [1.2418956  1.0840223  1.2289907  0.95782185 0.7106306  1.0159342
+ 1.0268829  1.0711521  0.74755794 1.0503376 ]
+topics ['jitsi', 'webrtc', 'videobridge', 'video', 'powered', 'meet', 'join', 'conference']
+vectors (8, 384)
+topics (8, 384)
+distances [1.0308471 0.9050518 1.0416992 1.1917121 1.35525   1.1645176 1.1647723
+ 1.0944551]
+topics ['spotify', 'podcast', 'https', 'g0v', 'videos', 'open', 'podcasts', 'e6', 'video', 'free']
+vectors (13, 384)
+topics (10, 384)
+distances [0.82738686 0.73149043 1.0709883  1.0780514  0.898882   1.0825832
+ 0.74830955 1.1471257  0.95489293 0.9690068 ]
+topics ['firefox', 'stylemap美配', '故事', '臺北', 'mozilla', 'streetvoice', '痞客邦', 'ニーア', 'レプリカント', '最潮音樂社群']
+vectors (50, 384)
+topics (10, 384)
+distances [1.0969524  0.94748217 0.89313155 0.8792904  1.0963482  1.1756337
+ 0.8959613  0.9399251  0.9827223  0.86894315]
+topics ['cosmos', 'network', 'decentralized', 'blockchain', 'interchain', 'developers', 'dex', 'dydx', 'earn', 'chain']
+vectors (5, 384)
+topics (10, 384)
+distances [0.88116586 1.1508942  1.069203   0.99772507 0.8928449  1.2141029
+ 1.1361037  1.0876803  1.1803858  1.12117   ]
+topics ['facebook', '登入', '即可開始和親朋好友及認識的人分享聯繫', '登入或註冊']
+vectors (4, 384)
+topics (4, 384)
+distances [0.88390076 1.101646   0.779493   1.0760815 ]
+topics ['書名', 'isbn', '出版日期', '作者', '出版社', '類別', '頁數', '繁體中文', '台灣雲端書庫', '語言']
+vectors (18, 384)
+topics (10, 384)
+distances [0.92864776 1.0640064  0.9420253  1.0293276  0.90522987 1.0293276
+ 1.0293276  0.8012689  0.7299199  1.0301628 ]
+topics ['mail', 'server', 'domain', 'postfix', 'proton', 'based', 'new', 'step', 'spam', 'emails']
+vectors (10, 384)
+topics (10, 384)
+distances [0.8873642  0.99154633 1.006988   0.80497247 1.0649564  1.1027398
+ 1.0864202  1.1250194  0.96136653 0.8810786 ]
+topics ['github', 'contribute', 'creating', 'development', 'account', 'git', 'software', 'build', 'million', 'people']
+vectors (22, 384)
+topics (10, 384)
+distances [0.5912512  0.9838453  1.0473434  0.9848274  1.074833   0.7544425
+ 0.97429484 0.98634946 1.123004   1.1367767 ]
+topics ['latex', 'github', 'editor', 'use', 'online', 'cutiepi', 'gin', 'templates', 'framework', 'tiling']
+vectors (20, 384)
+topics (10, 384)
+distances [0.9237623  0.89350826 0.8665793  1.0219666  1.0653377  1.0409279
+ 1.0376549  0.8631809  0.9413605  0.9831426 ]
+topics ['free', 'english', 'dictionary', 'online', 'translate', 'collocation', 'oxford', 'words', 'world', 'open']
+vectors (9, 384)
+topics (10, 384)
+distances [1.0187128  0.9300466  0.8359745  1.0589938  0.9550971  0.94781786
+ 0.99909604 0.99315137 1.0671525  1.0887905 ]
+topics ['許明恩', 'substack', '區塊勢', 'hackmd', 'cs', 'app', 'video', 'blog', 'read', 'thousands']
+vectors (26, 384)
+topics (10, 384)
+distances [0.8614335  1.0495583  0.90601116 1.0162097  1.0132444  1.0279963
+ 1.0373131  1.0008892  1.039342   1.0881447 ]
+topics ['verilog', 'online', 'binary', 'ardour', 'documentation', 'code', 'run', 'github', 'typing', 'reference']
+vectors (25, 384)
+topics (10, 384)
+distances [0.87240213 1.0211127  0.94433516 0.96269584 0.89669895 0.8992611
+ 1.0729158  0.99255574 0.9492531  1.0338444 ]
+topics ['golang', 'github', 'git', 'module', 'json', 'learn', 'programming', 'server', 'language', 'development']
+vectors (15, 384)
+topics (10, 384)
+distances [0.71093565 0.9795301  0.9926777  1.1043367  1.0359118  1.1970968
+ 1.0616924  1.1370385  1.1420163  1.1287423 ]
+topics ['likecoin', 'github', 'chain', 'indexer', 'account', 'api', 'contribute', 'creating', 'development', 'app']
+vectors (7, 384)
+topics (10, 384)
+distances [0.88707876 0.8403837  1.2112288  1.1378238  1.1976749  1.1214278
+ 1.1511776  1.1671348  1.1585932  1.2043948 ]
+topics ['api', 'like', 'router', 'oauth', 'js', 'openid', 'mutt', 'development', 'authorization', 'github']
+vectors (17, 384)
+topics (10, 384)
+distances [0.8118941  1.0620279  1.0033082  0.8544037  0.9981994  0.92743343
+ 0.9764764  1.0017396  0.9241459  0.96164346]
+topics ['https', 'com', 'likecoin', 'xyz', 'lukesmith', 'www', 'epik', 'staking', 'street', 'liker']
+vectors (13, 384)
+topics (10, 384)
+distances [1.0242206  0.97920763 0.79376626 1.0759478  1.0837653  0.9854708
+ 1.0572284  0.8738885  1.0531929  0.9400596 ]
+topics ['using', 'github', 'tool', 'code', 'questions', 'world', 'online', 'open', 'fall', 'model_selection']
+vectors (30, 384)
+topics (10, 384)
+distances [0.95291054 0.93943053 0.9293276  0.88851464 0.92003274 0.94009835
+ 0.998482   0.97576255 0.97248673 0.9962753 ]
+topics ['open', 'world', 'source', 'server', 'game', 'hat', 'network', 'build', 'red', 'radius']
+vectors (27, 384)
+topics (10, 384)
+distances [1.0081965  0.99699396 1.0295842  0.9093423  1.0096841  1.0380387
+ 0.9131611  0.9579741  1.0383589  0.99598694]
+topics ['data', 'seafile', 'tutorial', 'storage', 'com', 'backup', 'free', 'use', 'online', 'cloud']
+vectors (20, 384)
+topics (10, 384)
+distances [0.92832905 0.91305697 1.0006151  0.90183926 0.95738024 0.91198206
+ 0.9831317  0.97951186 0.985525   0.87456954]
+topics ['youtube', '並與親朋好友和全世界觀眾分享你的影片', '上盡情享受自己喜愛的影片和音樂', '上傳原創內容']
+vectors (8, 384)
+topics (4, 384)
+distances [1.1034442  0.9566156  0.88359004 0.90042526]
+topics ['linux', 'service', 'run', 'creating', 'password', 'systemd', 'os', 'user', 'ubuntu', 'files']
+vectors (15, 384)
+topics (10, 384)
+distances [0.77448136 1.0698888  1.0681713  1.0227542  0.9513418  0.9825286
+ 0.8938889  1.0453935  0.9499414  1.0148232 ]
+topics ['ai', 'art', 'image', 'use', 'free', 'like', 'scratch', 'programs', '3d', 'software']
+vectors (16, 384)
+topics (10, 384)
+distances [0.974007   0.9335931  0.9498813  1.0125914  0.9759793  1.0794518
+ 1.0210024  0.93722445 0.8696094  0.8884059 ]
+topics ['ledger', 'accounting', 'command', 'line', 'cli', 'essentials', 'gregory', 'economics', 'mankiw', 'free']
+vectors (8, 384)
+topics (10, 384)
+distances [0.828479   0.8298169  1.1141798  1.1102331  1.046976   1.0865424
+ 1.1225932  0.92213637 1.0798583  1.1057599 ]
+topics ['tor', 'nginx', 'mariadb', '架設', 'wang', 'linux', 'ip', 'radius', 'privoxy', 'pi']
+vectors (16, 384)
+topics (10, 384)
+distances [1.0210049 0.9848976 1.0622884 1.0195353 1.0630219 1.0620607 1.0189099
+ 1.1142907 1.0968152 1.0499572]
+topics ['latex', 'tutorials', 'tutorial', 'learn', 'programming', 'free', 'web', 'python', 'css', 'blender']
+vectors (18, 384)
+topics (10, 384)
+distances [0.9175152  0.69884413 0.77014345 1.0024647  0.77860796 1.0429188
+ 0.9135052  0.8489358  0.98190534 0.95745367]
+topics ['nextcloud', 'hub', 'virtual', 'files', 'brings', 'performance', 'desktop', 'docker', 'drive', 'slow']
+vectors (5, 384)
+topics (10, 384)
+distances [0.68427074 1.1324688  1.1546893  1.1460983  1.2184469  1.1616719
+ 1.1308671  1.029167   1.193015   1.168297  ]
+topics ['tensorflow', 'learning', 'github', 'japan', 'deep', 'training', 'openai', 'implementation', 'minimal', 'gpt']
+vectors (9, 384)
+topics (10, 384)
+distances [0.64511263 1.013402   1.088457   1.1795014  1.0596471  1.0152764
+ 0.9719212  1.1138334  1.1282103  1.0756698 ]
+topics ['search', 'web', 'privately', 'brave']
+vectors (4, 384)
+topics (4, 384)
+distances [0.9075032 1.1175793 1.1014217 0.9736725]
+topics ['mark', '謝謝', '韋諾之戰', 'huang', '基礎建設與標準化', '宮崎駿早年溫暖治愈動畫', '恰克和飛鳥', '本片是宮崎駿為日本一個流行音樂樂隊', 'wesnoth', 'reporter']
+vectors (15, 384)
+topics (10, 384)
+distances [1.2368504  0.9890603  0.76365954 0.9675852  0.96287906 0.88344324
+ 0.90091455 0.89289474 1.209106   1.1773183 ]
+topics ['usb', 'trs', 'usb2', '錄音介面', '24bit', 'arduino', 'ios', 'stereo', 'behringer', 'ur']
+vectors (5, 384)
+topics (10, 384)
+distances [1.0591162 1.2285236 1.028093  1.1653765 1.1745648 1.144663  1.2270768
+ 1.2117172 1.0533088 1.2428397]
+topics ['z01kd', '404', 'page', 'zenfone', 'ze554kl', 'asus', 'install', 'lineage', 'lost', 'zimbra']
+vectors (6, 384)
+topics (10, 384)
+distances [1.0712383  0.7154075  0.97304267 1.0346706  1.0559747  1.141348
+ 1.0842743  1.1816722  1.175012   1.0441886 ]
+topics ['theme', 'hugo', 'github', 'stack', 'demo', 'kross', 'minimal', 'clean', 'features', 'support']
+vectors (7, 384)
+topics (10, 384)
+distances [0.87181246 0.8624339  1.0549737  1.1616156  1.0991812  1.1366112
+ 1.154146   1.1880026  1.1678221  1.1929678 ]
+topics ['information', 'software', 'university', 'study', 'bachelor', 'unisa', 'south', 'australia', 'students', 'international']
+vectors (5, 384)
+topics (10, 384)
+distances [1.1608356  1.1827967  0.9411382  1.1112089  1.0315721  0.89253134
+ 1.2593591  1.1612234  1.1397104  1.1209514 ]
+topics ['i3', 'i3wm', 'manager', 'wm', 'window', 'github', 'collection', 'themes', 'theme', 'nimishgo']
+vectors (5, 384)
+topics (10, 384)
+distances [0.87058234 0.76241183 1.1685487  1.0470314  1.0647144  1.1306754
+ 1.2595646  1.03959    1.0555711  1.1834177 ]
+topics ['ipfs', 'synology', 'gateway', 'miaoski', 'qemu', 'tutorial', 'manager', 'diskstation', 'github', '安裝']
+vectors (8, 384)
+topics (10, 384)
+distances [0.76641685 0.8997473  1.0623012  1.1130607  1.0877366  1.0892398
+ 1.1687461  0.9729795  1.0142602  1.1194978 ]
+topics ['firefox', 'customize', 'controls', 'toolbars', 'buttons', 'help', 'explains', 'article', 'ways', 'mozilla']
+vectors (8, 384)
+topics (10, 384)
+distances [0.7867053  1.0064205  1.1304348  0.9764679  1.0170095  1.1982576
+ 1.2726115  1.2651253  1.2763416  0.84751844]
+topics ['fedora', 'linux', 'org', 'built', 'containers', 'clouds', 'love', 'platform', 'project', 'ask']
+vectors (8, 384)
+topics (10, 384)
+distances [0.66258115 0.82327676 1.1775508  1.1856974  1.1917454  1.2242607
+ 1.2498312  1.0156224  1.2014045  1.2120647 ]
+Done
+Done
+Cluster 39: webrtc (1.0)
+	Jitsi Meet: https://meet.linchpins.cloud/linchpins
+	Jitsi Meet: https://meet.jit.si/
+	Jitsi Meet: https://meet.jit.si/g0vhala
+	Jitsi Meet: https://meet.linchpins.cloud/justin-piano-lesson#config.disableAP=true
+	Jitsi Meet: https://jitsi.pdis.dev/
+	Jitsi Meet: https://meet.jit.si/linux-odyssey
+	Jitsi Meet: https://meet.linchpins.cloud/
+	Jitsi Meet: https://meet.jit.si/inkrosetta
+
+Cluster 27: search (1.0)
+	Brave Search: https://search.brave.com/search?q=how+to+make+overfitting&source=desktop
+	Brave Search: https://search.brave.com/search?q=numpy+noise&source=desktop
+	Brave Search: https://search.brave.com/search?q=sklearn+install&source=desktop
+	Brave Search: https://search.brave.com/search?q=%E9%9D%BA&source=android
+
+Cluster 25: 上盡情享受自己喜愛的影片和音樂 (0.880347266793251)
+	- YouTube: https://www.youtube.com/watch?v=Ox1r_wTPKdA
+	- YouTube: http://www.youtube.com/watch?v=D4w8HRgU34k&feature=related
+	- YouTube: http://www.youtube.com/watch?v=BCJWkJl3s1U&feature=grec_index
+	- YouTube: http://www.youtube.com/watch?v=9WmuC_sk6bM
+	YouTube: http://www.youtube.com/?gl=TW&hl=zh-TW
+	- YouTube: http://www.youtube.com/watch?v=booQLAEpd08&list=PL4BF6323122359CE3
+	YouTube: https://www.youtube.com/
+	YouTube: https://m.youtube.com/
+
+Cluster 33: 即可開始和親朋好友及認識的人分享聯繫 (0.8375839591026306)
+	登入 Facebook: https://www.facebook.com/messages
+	Facebook - 登入或註冊: http://www.facebook.com/
+	登入 Facebook: https://www.facebook.com/messages/t/100008093379864
+	Facebook - 登入或註冊: https://zh-tw.facebook.com/
+
+Cluster 37: unisa (0.42770108580589294)
+	Home: https://unisa.edu.au/
+	Study Bachelor of Information Technology at the University of South Australia (UniSA). Information for International students.: https://study.unisa.edu.au/degrees/bachelor-of-information-technology
+	Study Bachelor of Information Technology (Networking and Cybersecurity) at the University of South Australia (UniSA). Information for International students.: https://study.unisa.edu.au/degrees/bachelor-of-information-technology-networking-and-cybersecurity
+	Study Bachelor of Information Technology (Software Development) at the University of South Australia (UniSA). Information for International students.: https://study.unisa.edu.au/degrees/bachelor-of-information-technology-software-development
+	Study Bachelor of Software Engineering (Honours) at the University of South Australia (UniSA). Information for International students.: https://study.unisa.edu.au/degrees/bachelor-of-software-engineering-honours
+
+Cluster 42: cosmos (0.39036683440208436)
+	Trade on Osmosis Zone: https://app.osmosis.zone/?from=ATOM&to=OSMO
+	Cosmos Network - Internet of Blockchains: https://v1.cosmos.network/rpc/v0.42.6
+	Cosmos Network - Internet of Blockchains: https://v1.cosmos.network/rpc/v0.41.4
+	Announcing dYdX Chain: https://dydx.exchange/blog/dydx-chain
+	Trade on Osmosis Zone: https://app.osmosis.zone/
+
+Cluster 29: firefox (0.3612306695431471)
+	Customize Firefox controls, buttons and toolbars | Firefox Help: https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize
+	Learn About Mozilla: https://www.mozilla.org/en-US/about/
+	The Mozilla Blog: http://blog.mozilla.com/
+	Firefox - Protect your life online with privacy-first products: https://www.mozilla.org/en-US/firefox/central/
+	Customize Firefox controls, buttons and toolbars | Firefox Help: http://www.mozilla.com/zh-TW/firefox/customize/
+	Customize Firefox controls, buttons and toolbars | Firefox Help: https://www.mozilla.org/zh-TW/firefox/customize/
+	Customize Firefox controls, buttons and toolbars | Firefox Help: https://www.mozilla.org/en-US/firefox/customize/
+	9 Open Source Add-Ons to Improve Your Firefox Experience: https://itsfoss.com/best-firefox-add-ons/
+
+Cluster 45: fedora (0.34817179292440414)
+	FedoraForum.org: https://forums.fedoraforum.org/
+	Fedora: https://www.facebook.com/TheFedoraProject
+	Fedora News: https://telegram.me/fedoranews
+	Join the Fedora Linux Discord Server!: https://discordapp.com/invite/fedora
+	Fedora Linux: https://arm.fedoraproject.org/
+	Fedora Linux: https://getfedora.org/
+	Ask Fedora: https://ask.fedoraproject.org/
+	Get Involved: https://fedoraproject.org/wiki/Join
+
+Cluster 40: github (0.3110820693629129)
+	GitHub - likecoin/likecoin-chain-tx-indexer: Transaction indexer for LikeCoin chain: https://github.com/likecoin/likecoin-chain-tx-indexer
+	GitHub - likecoin/app-like-co: ISCN App app.like.co: https://github.com/likecoin/app-like-co
+	GitHub - likecoin/likecoin-api-public: LikeCoin API Public api.docs.like.co: https://github.com/likecoin/likecoin-api-public
+	GitHub - likecoin/testnets: Testnet configurations for LikeCoin chain: https://github.com/likecoin/testnets
+	GitHub - likecoin/docs: Documentation for Liker Land and LikeCoin.: https://github.com/likecoin/dao
+	GitHub - likecoin/iscn-specs: International Standard Content Number - decentralized content registry: https://github.com/likecoin/iscn-specs
+	GitHub - lancatlin/likecoin-chain-tx-indexer: Transaction indexer for LikeCoin chain: https://github.com/lancatlin/likecoin-chain-tx-indexer
+
+Cluster 19: nextcloud (0.2706161141395569)
+	Nextcloud really slow after installation: https://help.nextcloud.com/t/nextcloud-really-slow-after-installation/74719
+	Nextcloud Hub II brings major overhaul, introducing Nextcloud Office, P2P backup and more - Nextcloud: https://nextcloud.com/de/blog/nextcloud-hub-2-brings-major-overhaul-introducing-nextcloud-office-p2p-backup-and-more/
+	Nextcloud faster than ever! Introducing Files High Performance Back-end - Nextcloud: https://nextcloud.com/blog/nextcloud-faster-than-ever-introducing-files-high-performance-back-end/
+	Nextcloud introduces Virtual Drive in Desktop Client to simplify desktop integration - Nextcloud: https://nextcloud.com/blog/nextcloud-introduces-virtual-drive-in-desktop-client-to-simplify-desktop-integration/
+	Nextcloud + Syncthing Integration: https://itcamefromtheinternet.com/blog/nextcloud-syncthing-integration/
+
+Cluster 26: hugo (0.25190428112234386)
+	GitHub - themefisher/kross-hugo: Kross is a creative, sleek and modern personal portfolio Hugo theme with a gorgeous appearance.: https://github.com/themefisher/kross-hugo
+	mediumish: https://themes.gohugo.io/themes/mediumish-gohugo-theme/
+	Stack: https://themes.gohugo.io/themes/hugo-theme-stack/
+	GitHub - zhaohuabing/hugo-theme-cleanwhite: A clean, elegant blog theme for hugo: https://github.com/zhaohuabing/hugo-theme-cleanwhite
+	Rocinante: https://themes.gohugo.io/themes/hugo-rocinante/
+	GitHub - josephhutch/aether: A responsive and clean Hugo theme for blogs: https://github.com/josephhutch/aether
+	GitHub - yihui/hugo-xmag: A minimal magazine theme for Hugo: https://github.com/yihui/hugo-xmag
+
+Cluster 36: i3wm (0.23666461706161498)
+	i3 - Reference Card: https://i3wm.org/docs/refcard.html
+	GitHub - nimishgo/i3wm-themes: My collection of Themes for i3-wm: https://github.com/nimishgo/i3wm-themes
+	Set Background Wallpapers On I3wm | LinuxAndUbuntu: https://www.linuxandubuntu.com/home/set-background-wallpapers-on-i3wm
+	GitHub - stav121/i3wm-themer: 🎨 Theme collection manager for i3-wm: https://github.com/unix121/i3wm-themer
+	Configuring i3 Window Manager: a Complete Guide: https://thevaluable.dev/i3-config-mouseless/
+
+Cluster 11: usb2 (0.19929808378219604)
+	Behringer UMC404 HD 4X4 USB2.0錄音介面 (24Bit/192KHz超高取樣)【音響世界】 | 蝦皮購物: https://shopee.tw/Behringer-UMC404HD-4X4-USB2-0%E9%8C%84%E9%9F%B3%E4%BB%8B%E9%9D%A2--24Bit-192KHz%E8%B6%85%E9%AB%98%E5%8F%96%E6%A8%A3-%E3%80%90%E9%9F%B3%E9%9F%BF%E4%B8%96%E7%95%8C%E3%80%91-i.7223108.2026381368
+	Steinberg UR44C USB 錄音介面: https://www.taiwanaccess.com.tw/products/interfaceur44c
+	Steinberg UR-RT4 錄音介面 | DigiLog 聲響實驗室: https://digilog.tw/products/1255
+	Arduino 智能小車實作－關於電源供電方案 | Kenmingの鮮思維: http://www.kenming.idv.tw/arduino-intellect-car_about_power-supply-solution/
+	Arduino 智能小車實作－關於電源供電方案 | Kenmingの鮮思維: https://www.kenming.idv.tw/arduino-intellect-car_about_power-supply-solution/
+
+Cluster 31: 404 (0.15679456883420548)
+	404 Not Found: https://www.cnbeartw.com/product/%E9%9B%BB%E5%AD%90%E7%90%B4%E6%9E%B6/k-708b-%E3%84%87%E5%AD%97%E5%9E%8B%E9%9B%BB%E5%AD%90%E7%90%B4%E6%9E%B6
+	404 Page not found: https://wancat.cc/xunkuang/
+	404 Page not found: https://wancat.cc/bitcoin-master/index.txt
+	Oops, something lost: https://www.poftut.com/qemu-tutorial/
+	404 - Not Found: https://zcs3.ntut.edu.tw/m/zmain#conversation
+	How To Install Lineage OS On Asus ZenFone 4 (ZE554KL) Z01KD Z01KD 2 - TweakDroid: https://tweakdroid.com/lineage/asus-zenfone-4-ze554kl-z01kd-z01kd-2/
+
+Cluster 4: ledger (0.13263903558254242)
+	Home - hledger: https://hledger.org/
+	Ledger: Command-Line Accounting: https://www.ledger-cli.org/3.0/doc/ledger3.html
+	Ledger CLI cheatsheet: https://devhints.io/ledger
+	Report Scripts for Ledger CLI with Gnuplot: https://www.sundialdreams.com/report-scripts-for-ledger-cli-with-gnuplot/
+	ledger, a powerful command-line accounting system - ledger: https://www.ledger-cli.org/
+	Essentials of economics : Mankiw, N. Gregory : Free Download, Borrow, and Streaming : Internet Archive: https://archive.org/details/essentialsofecon0005mank/page/n9/mode/2up
+	Essentials of economics : Mankiw, N. Gregory : Free Download, Borrow, and Streaming : Internet Archive: https://archive.org/details/isbn_9780324376562
+	Library Genesis: N. Gregory Mankiw - Essentials of Economics (MindTap Course List): https://libgen.rs/book/index.php?md5=C789391FF3F69388E284FED9C81968DA
+
+Cluster 28: 魔鏡歌詞網 (0.12981811588009198)
+	Music resources - HackMD: https://hackmd.io/@idoleat/rJpD1_y4X
+	【HD】胡歌 - 風起時 [歌詞字幕][電視劇《琅琊榜》主題曲][完整高音質] Nirvana in Fire Theme Song: https://www.youtube.com/watch?v=qUedfS-PWb0
+	新增專輯 ※ Mojim.com 魔鏡歌詞網: https://mojim.com/
+	Piano Solo 坂本龍一 ピアノ名曲集 2 Ryuichi Sakamoto Piano Collection 2: https://www.talubook.com/index.php?route=product/product&path=20000_20900_90718&product_id=25920
+	對於音樂製作入門者，選購Audio Interface 時要知道的8件事 | K歌士多: https://www.ksongstore.com/daw/get-these-8-knowledge-before-buy-audio-interface/
+	淺動'22成發 采琳組: https://m.youtube.com/watch?v=F5RxOfQppJE&feature=youtu.be
+	淺動'22回顧影片: https://m.youtube.com/watch?v=XfE4FXycKpA&feature=youtu.be
+	珂拉琪〈萬千花蕊慈母悲哀〉外表看似跳躍，結構卻過於常人的歌詞｜聽歌職業病: https://www.youtube.com/watch?v=1DR8CHdKrYM
+	3種流行音樂中常見 人聲和聲的編寫想法: https://shopping.harvestmusician.com/blog/VocalProduction0910
+	Computer Music Japan: https://computermusic.jp/
+	落日 by 東京事變 @ 雲端。在靠近太陽的地方住下。 :: 痞客邦 ::: https://minniefc.pixnet.net/blog/post/2156902
+	新增專輯 ※ Mojim.com 魔鏡歌詞網: http://mojim.com/
+	音樂製作要怎樣開始？首先架設好你的DAW | K歌士多: https://www.ksongstore.com/daw/setup-your-daw-to-begin-music-production/
+	專輯 - 巴賴 - 古老的透明: https://shop.cyuncai.com/rc-740067
+	椎名林檎，假如不是為了這愚蠢的人生和未來，我也許會倔強地像椎名一樣不讓你走。: https://xiapxiap.wordpress.com/2010/02/06/%e6%a4%8e%e5%90%8d%e6%9e%97%e6%aa%8e%ef%bc%8c%e5%81%87%e5%a6%82%e4%b8%8d%e6%98%af%e7%82%ba%e4%ba%86%e9%80%99%e6%84%9a%e8%a0%a2%e7%9a%84%e4%ba%ba%e7%94%9f%e5%92%8c%e6%9c%aa%e4%be%86%ef%bc%8c%e6%88%91/
+
+Cluster 34: configure (0.1278864728907744)
+	How do I configure my linux system to allow JACK to use realtime scheduling? | JACK Audio Connection Kit: https://jackaudio.org/faq/linux_rt_config.html
+	How to set up static IP address on Debian Linux 10/11: https://www.cyberciti.biz/faq/add-configure-set-up-static-ip-address-on-debianlinux/
+	How do I configure my linux system to allow JACK to use realtime scheduling? | JACK Audio Connection Kit: http://jackaudio.org/faq/linux_rt_config.html
+	Wireless configuration using /etc/network/interfaces documentation: https://askubuntu.com/questions/168687/wireless-configuration-using-etc-network-interfaces-documentation
+	PPPOE does not connect on boot: https://raspberrypi.stackexchange.com/questions/22888/pppoe-does-not-connect-on-boot
+	RaspberryPi as PPPoE server - issue in starting ppp service: https://raspberrypi.stackexchange.com/questions/95588/raspberrypi-as-pppoe-server-issue-in-starting-ppp-service
+
+Cluster 35: vim (0.12422723574563861)
+	Micro: Making File Editing Easier in Linux Terminal: https://itsfoss.com/micro-editor-linux/
+	GitHub - leafOfTree/vim-vue-plugin: Vim syntax and indent plugin for .vue files: https://github.com/leafOfTree/vim-vue-plugin
+	GitHub - preservim/nerdtree: A tree explorer plugin for vim.: https://github.com/preservim/nerdtree
+	Mastering Vim: Working with multiple files – confirm blog: https://blog.confirm.ch/mastering-vim-working-with-multiple-files/
+	Accessing the system clipboard: https://vim.fandom.com/wiki/Accessing_the_system_clipboard
+	Make Vim completion popup menu work just like in an IDE: https://vim.fandom.com/wiki/Make_Vim_completion_popup_menu_work_just_like_in_an_IDE
+	GitHub - fatih/vim-go-tutorial: Tutorial for vim-go: https://github.com/fatih/vim-go-tutorial#go-to-definition
+	GitHub - ranger/ranger: A VIM-inspired filemanager for the console: https://github.com/ranger/ranger
+	Vim Tips Wiki: http://vim.wikia.com/wiki/Vim_Tips_Wiki
+	Using Vim as C/C++ IDE: https://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/
+
+Cluster 23: golang (0.11665931389822314)
+	PostgreSQL JSON cheatsheet: https://devhints.io/postgresql-json
+	Writing an SSH server in Go: https://blog.gopheracademy.com/advent-2015/ssh-server-in-go/
+	Building an Awesome CLI App in Go – OSCON 2017 | spf13: https://spf13.com/presentation/building-an-awesome-cli-app-in-go-oscon/
+	GitHub - rivo/tview: Terminal UI library with rich, interactive widgets — written in Golang: https://github.com/rivo/tview
+	GitHub - gizak/termui: Golang terminal dashboard: https://github.com/gizak/termui
+	基于golang+openssh 服务实现一个简单的git over ssh 服务 - 荣锋亮 - 博客园: https://www.cnblogs.com/rongfengliang/p/15924816.html
+	GitHub - gogs/git-module: Package git-module is a Go module for Git access through shell commands: https://github.com/gogs/git-module
+	Golang OAuth 2.0: https://github.com/go-oauth2
+	Creating an OAuth2 Client in Golang (With Full Examples): https://www.sohamkamani.com/blog/golang/2018-06-24-oauth-with-golang/
+	Parse XML Data In A Golang Application: https://www.thepolyglotdeveloper.com/2017/03/parse-xml-data-in-a-golang-application/
+	SliceTricks: https://github.com/golang/go/wiki/SliceTricks
+	JSON and Go - The Go Programming Language: https://blog.golang.org/json-and-go
+	GitHub - quii/learn-go-with-tests: Learn Go with test-driven development: https://github.com/quii/learn-go-with-tests
+	How to Implement Password Authentication and Storage in Go (Golang): https://www.sohamkamani.com/blog/2018/02/25/golang-password-authentication-and-storage/
+	Go Packages - Go Packages: https://pkg.go.dev/
+
+Cluster 24: tensorflow (0.11579086548752254)
+	The complete guide to ML model visualization with Tensorboard | cnvrg.io: https://cnvrg.io/tensorboard-guide/
+	tf.summary.image | TensorFlow v2.15.0.post1: https://www.tensorflow.org/api_docs/python/tf/summary/image
+	tf.keras.layers.Dropout | TensorFlow v2.15.0.post1: https://www.tensorflow.org/api_docs/python/tf/keras/layers/Dropout
+	Tensorflow — Neural Network Playground: https://playground.tensorflow.org/#activation=relu&batchSize=10&dataset=circle®Dataset=reg-gauss&learningRate=0.03®ularizationRate=0&noise=20&networkShape=4,5,4,4,2&seed=0.23401&showTestData=false&discretize=false&percTrainData=70&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
+	How to Train Your Own Object Detector Using TensorFlow Object Detection API: https://neptune.ai/blog/how-to-train-your-own-object-detector-using-tensorflow-object-detection-api
+	could not create cudnn handle: CUDNN_STATUS_INTERNAL_ERROR: https://stackoverflow.com/questions/43147983/could-not-create-cudnn-handle-cudnn-status-internal-error
+	Failed to get convolution algorithm. This is probably because cuDNN failed to initialize,: https://stackoverflow.com/questions/53698035/failed-to-get-convolution-algorithm-this-is-probably-because-cudnn-failed-to-in
+	GitHub - karpathy/minGPT: A minimal PyTorch re-implementation of the OpenAI GPT (Generative Pretrained Transformer) training: https://github.com/karpathy/minGPT
+	GitHub - oreilly-japan/deep-learning-from-scratch: 『ゼロから作る Deep Learning』(O'Reilly Japan, 2016): https://github.com/oreilly-japan/deep-learning-from-scratch
+
+Cluster 12: 台灣雲端書庫 (0.07724210852757096)
+	Matters: https://matters.news/
+	台灣雲端書庫: http://www.ebookservice.tw/
+	綜合所得稅節稅手冊-財政部稅務入口網: https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax?page=0&size=10
+	中華郵政-網路郵局: https://ipost.post.gov.tw/pst/home.html
+	天瓏網路書店 | 現代自然語言生成: https://www.tenlong.com.tw/products/9787121402494
+	聲音與憤怒：搖滾樂可能改變世界嗎？（十週年紀念增訂版）: https://www.books.com.tw/products/0010665673
+	第7案至第16案公投公報電子書 - HackMD: https://hackmd.io/c/Hk7SAIH6Q/%2Fs%2FByTGtuHam
+	Zuvio 即時反饋系統: https://irs.zuvio.com.tw/
+	上市公司基本資料: https://data.gov.tw/dataset/18419
+	主打开源：Slimbook 发布 第二代 katana ii 笔记本电脑699欧元（约5410元）_笔记本电脑_什么值得买: https://post.smzdm.com/p/armezoq/
+	公視+ | 404: https://www.ptsplus.tv/season/c03d00fb-a659-486c-9ff1-81da26487b9e/episode-type/Episode/3cd31f8c-d7d7-4573-bce4-3fd60f19ffad
+	催生音樂：混音工程與製作(第二版): https://www.books.com.tw/products/0010725848
+	上市公司每月營業收入彙總表: https://data.gov.tw/dataset/18420
+	上櫃公司每月營業收入彙總表: https://data.gov.tw/dataset/56510
+	荀子 : 勸學 - 中國哲學書電子化計劃: https://ctext.org/xunzi/quan-xue/zh
+	真理機器：區塊鏈與數位時代的新憲法: https://www.books.com.tw/products/0010811881
+	自願被吃的豬：100個讓人想破頭的哲學問題: https://www.books.com.tw/products/0010543337
+	台灣雲端書庫: https://www.ebookservice.tw/
+
+Cluster 5: postfix (0.07087700585834682)
+	Proton Mail: https://mail.protonmail.com/
+	Proton: https://account.proton.me/authorize?app=proton-mail&state=bYaM07JyMFnhFYoJv2YcLh205gJRjijyw6O3DhBPLis
+	Proton Mail: https://mail.proton.me/
+	nginx TLS SNI routing, based on subdomain pattern: https://gist.github.com/kekru/c09dbab5e78bf76402966b13fa72b9d2
+	Setup Postfix for multiple domains - Experiencing Technology: https://blog.tinned-software.net/setup-postfix-for-multiple-domains/
+	Add a new sender domain to an existing POSTFIX mail server - a step by step guide: https://eran.ben-shahar.com/2019/11/24/add-a-new-sender-domain-to-an-existing-postfix-mail-server-a-step-by-step-guide/
+	How to send emails and avoid them being classified as spam?: https://serverfault.com/questions/48428/how-to-send-emails-and-avoid-them-being-classified-as-spam
+	How to secure Postfix using Let’s Encrypt: https://upcloud.com/community/tutorials/secure-postfix-using-lets-encrypt/
+	Security | TLS (aka SSL) - Docker Mailserver: https://docker-mailserver.github.io/docker-mailserver/edge/config/security/ssl/#lets-encrypt-recommended
+	How to Use Fail2ban to Secure Your Server (A Tutorial): https://www.linode.com/docs/guides/using-fail2ban-to-secure-your-server-a-tutorial/
+
+Cluster 17: tutorials (0.07016531835284291)
+	Learn CSS | web.dev: https://web.dev/learn/css/
+	Introduction to Random Numbers in NumPy: https://www.w3schools.com/python/numpy/numpy_random.asp
+	NumPy Array Reshaping: https://www.w3schools.com/python/numpy/numpy_array_reshape.asp
+	Learn C++ | Codecademy: https://www.codecademy.com/learn/learn-c-plus-plus
+	Minigame Blitz: https://www.minecraftmaps.com/game-maps/minigame-blitz
+	LaTeX math and equations - LaTeX-Tutorial.com: https://latex-tutorial.com/tutorials/amsmath/
+	Learn Python 2 | Codecademy: https://www.codecademy.com/learn/learn-python
+	Free Programming Books; HTML5, CSS3, JavaScript, PHP, Python...: https://books.goalkicker.com/
+	Python Web Flask 實戰開發教學 - 簡介與環境建置: https://blog.techbridge.cc/2017/06/03/python-web-flask101-tutorial-introduction-and-environment-setup/
+	LinuxOPsys: Linux How-to guide, Tutorials & Tips: https://linoxide.com/linux-how-to/run-wayland-weston-arch-linux/
+	Shell Scripting Tutorial: https://www.shellscript.sh/
+	BEGINNER'S TUTORIAL: http://brunoruviaro.github.io/ardour4-tutorial/
+	W3Schools Online Web Tutorials: https://www.w3schools.com/
+	Internet’s Best Programming Blog Posts, Guides and Books: https://hackernoon.com/how-to-add-a-gui-to-your-golang-app-in-5-easy-steps-c25c99d4d8e0
+	Recursion - Learn C - Free Interactive C Tutorial: https://www.learn-c.org/en/Recursion
+	Tutorials — Blender Guru: https://www.blenderguru.com/tutorials
+	Blender Beginner Tutorial Series — Blender Guru: https://www.blenderguru.com/tutorials/blender-beginner-tutorial-series
+	Wanna Learn LaTeX? | Luke's Webpage: https://lukesmith.xyz/articles/wanna-learn-latex
+
+Cluster 21: 閩南語 (0.0682835719988881)
+	Go 語言課程: https://blog.wu-boy.com/golang-online-course/
+	你能想象在《NetHack》里用一柄长剑能做多少事吗？ | 机核 GCORES: https://www.gcores.com/articles/26597
+	意傳台文輸入法：快拍、順手，全新ê台語拍字工具: https://sujiphuat.ithuan.tw/
+	萌典 – 教育部國語、臺語、客語辭典民間版: https://www.moedict.tw/
+	蜂蜜與幸運草DVD,蜂蜜與四葉草Honey And CloverDVD,萬達DVD專賣店-www.rutenmall.com: http://wandadvd.com/detail.php?dvd=1772
+	迪卡儂 台灣官方網站 - 年末優惠、買多省多、降價出清，低至6折 - 超取$199 、宅配$499 免運: https://www.decathlon.tw/zh
+	67%人都申請的日本工作簽證「技術・人文知識・國際業務簽證」: https://japanlifemedia.com/work/474/
+	Facebook、隐私、监听广告以及我们如何失去自由的互联网的: https://jhuo.ca/post/facebook_privacy/
+	#SPY×FAMILY #小説 間諜家家酒 不平凡的一天 - 紅藍青の小説 - pixiv: https://www.pixiv.net/novel/show.php?id=17601028
+	大家都來學程式＝提升台灣「軟」實力？別讓軟體人才都成靠 X 工程師 - PanSci 泛科學: https://pansci.asia/archives/124065
+	智慧自動化工程科 - 國立臺北科技大學五專部智慧自動化工程科: https://iae.ntut.edu.tw/index.php
+	長大後，為什麼說真心話越來越難？｜女人迷 Womany: https://womany.net/read/article/17773?fbclid=IwAR0A5mlNyyr_U10PAsNKebPbOgvTd7cIAyS1VCSbREzAJAK7ygz7SzUUbUw
+	CN201185987Y - 可发光的唤醒眼罩 - Google Patents: https://patents.google.com/patent/CN201185987Y/zh
+	圖解編曲入門：掌握節拍、樂句、合奏3大要訣，單調旋律立即華麗變身，有型有款！: https://www.books.com.tw/products/0010741633?loc=M_asb_0_202
+	臉要大、嘴要小、袒胸上街也沒關係…一窺唐朝女性獨特的審美觀 -風傳媒: https://www.storm.mg/amparticle/3541709
+	用10個「各國不一樣審美觀」證明美沒有絕對！: https://www.teepr.com/643132/jonhsieh/%E4%B8%8D%E4%B8%80%E6%A8%A3%E5%AF%A9%E7%BE%8E%E8%A7%80/
+	免費中文字型－中文全字庫(全字庫楷體、全字庫宋體): https://magiclen.org/zh-tw-font/
+	未來城市：元宇宙之DAO 無大台社群 投票話事 - 20211226 - 副刊: https://m.mingpao.com/pns/%E5%89%AF%E5%88%8A/article/20211226/s00005/1640456257406/%E6%9C%AA%E4%BE%86%E5%9F%8E%E5%B8%82-%E5%85%83%E5%AE%87%E5%AE%99%E4%B9%8Bdao-%E7%84%A1%E5%A4%A7%E5%8F%B0%E7%A4%BE%E7%BE%A4-%E6%8A%95%E7%A5%A8%E8%A9%B1%E4%BA%8B
+	作文超進化 - 朱家安 | Readmoo 分享書: https://share.readmoo.com/book/845545?utm_campaign=%E3%80%90%E6%9C%B1%E5%AE%B6%E5%AE%89%E4%B8%8D%E8%A6%81%E5%81%B7%E6%87%B6%E4%BA%86%E3%80%91%E9%AB%98%E4%B8%AD%E7%94%9F%E5%AF%AB%E8%AB%96%E8%AA%AA%E6%96%87%EF%BC%8C%E5%B8%B8%E8%A6%8B%E7%9A%84%E4%B8%83%E5%80%8B%E9%8C%AF%E8%AA%A4&utm_medium=post&utm_source=news
+	《新百家學堂》閩南語 - 臺大開放式課程 (NTU OpenCourseWare): http://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/104S114
+	《新百家學堂》閩南語 - 臺大開放式課程 (NTU OpenCourseWare): http://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/104S114/1
+	围绕RMS、开源、自由软件的两场“战争”: https://jhuo.ca/post/rms_return_fsf/
+	新光影城-Shin Kong Cinemas: https://www.skcinemas.com/films/FP202202170005
+	2020 男生髮型推薦！票選 5 種「帥哥必剪」髮型，網友：什麼⋯寸頭竟然不是冠軍？ | JUKSY街星 | LINE TODAY: https://today.line.me/tw/v2/article/g2Mlap
+	【2024閩南語補習班推薦】6 大熱門閩南文課程費用評價總覽: https://tw.amazingtalker.com/courses/min_nan_chinese
+	Alice 🎉慶多位學生檢定通關/成功獲得工作機會->限額反饋 🥇教育部閩南語檢定/全民台語認證 👄全方位閩南語 經認證的中文, 閩南語線上教師: https://tw.amazingtalker.com/teachers-and-tutors/alice-d25c6149-5228-4b08-9e70-0bfd95824c23?from_tutors_page&language=min_nan_chinese&tag=writing
+	【Amnesty Camp】人權Juice果汁機 ─ 2022高中生暑期人權營: https://docs.google.com/forms/d/e/1FAIpQLSd4IUjDSwEQDU98mVGKLBPOAausrxwaE0RHmGoIdiRoZrI2fA/viewform
+	情到深處有大悲－論阿城棋王中的我 | 遠見雜誌: https://www.gvm.com.tw/article/755
+
+Cluster 32: dictionary (0.06371972526216672)
+	OpenStreetMap: https://www.openstreetmap.org/
+	Online OXFORD Collocation Dictionary of English: https://www.freecollocation.com/
+	Netspeak: https://netspeak.org/
+	spaCy · Industrial-strength Natural Language Processing in Python: https://spacy.io/
+	DeepL Translate: The world's most accurate translator: https://www.deepl.com/translator
+	Google Translate: https://translate.google.com/
+	Improve Your English Pronunciation: https://youglish.com/
+	Online OXFORD Collocation Dictionary of English: http://www.freecollocation.com/
+	Wikipedia, the free encyclopedia: https://www.wikipedia.org/
+
+Cluster 41: 韋諾之戰 (0.04142959746532142)
+	用公開的 Jitsi 服務也可以上遠端音樂課？ - Kuan-Yi Li's Blog: https://blog.abysm.org/2021/06/hd-audio-using-public-jitsi-server/
+	懷孕就解約？直視雇主的苦與移工的難，哪些改變才能扭轉弱弱相殘？ - 報導者 The Reporter: https://www.twreporter.org/a/migrant-workers-giving-birth-in-taiwan-solution
+	給「純文學」閱讀初心者的一點建議: https://chuckchu.com.tw/article/326
+	On Your Mark | 【宮崎駿早年溫暖治愈動畫《On Your Mark》】 本片是宮崎駿為日本一個流行音樂樂隊“恰克和飛鳥”而製作。這段MV同時也是一部7分鐘的無聲電影，講述了關於環保和希望主題的故事。... | By 微電影聚樂部 | Facebook: https://www.facebook.com/micromovie.tw/videos/on-your-mark/730666883622514/
+	出版NFT移民．典範轉移》重新省思數位世界：LikeCoin創辦人高重建談分散式出版 | Openbook閱讀誌: https://www.openbook.org.tw/article/p-66082
+	韋諾之戰（The Battle for Wesnoth）：免費開放原始碼、跨平台的回合制策略遊戲 - G. T. Wang: https://blog.gtwang.org/game/the-battle-for-wesnoth-free-turn-based-tactical-strategy-game/
+	網路之根－基礎建設與標準化 （Kenny Huang, ph.D.）: https://www.slideshare.net/tahr1984/kenny-huang-phd
+	Kai Life: https://kai73002981.blogspot.com/2018/07/minecraft-1.13-functions.html?m=1
+	無意識且沒有正常呼吸(CPR+AED): https://www.anne.education/f1ohca.html
+	【Matters】教練，我想修改文章…… - 空心二胡 (@HollowErhu): https://matters.news/@HollowErhu/matters-%E6%95%99%E7%B7%B4-%E6%88%91%E6%83%B3%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0-bafyreibjx4zjdu32lcow36ms2vmrc4oevjmjyb5y2644l3nmduwoahhlgy#Q29tbWVudDoxNDAzMTE
+	AI 如何找出你的喵：直觀理解卷積神經網路: https://demo.leemeng.tw/
+	【專訪】穿上軍服的漫畫家梁紹先：這傢伙的漫畫有破壞性，《國防報告書漫畫版》曾導致裁軍 - The News Lens 關鍵評論網: https://www.thenewslens.com/article/161523/page2
+	乾貨 | 閃電網路深入解讀（上）：支付通道: https://www.blocktempo.com/in-depth-interpretation-of-lightning-network-part1-payment-channel/
+	臺灣客家語「謝謝」怎麼說？「恁仔細」和「承蒙你」有什麼差別？: https://www.wpchen.net/zh/posts/hakka-taiwan-thank-you
+	異域生養──上萬名移工父母與他們孩子的崎嶇路 - 報導者 The Reporter: https://www.twreporter.org/topics/migrant-workers-giving-birth-in-taiwan
+
+Cluster 38: nginx (0.023685035566813895)
+	Go 项目结构：如何在 Go 项目中使用 MVC ？ | Go优质外文翻译 | Go 技术论坛: https://learnku.com/go/t/48112
+	C++ Gossip: https://openhome.cc/Gossip/CppGossip/
+	Nginx 配置：基于 SNI 的分流: https://bipy.me/post/nginx-stream/
+	架設 RADIUS 伺服器實務 (Configuring RADIUS Server): https://www.lijyyh.com/2013/07/radius-configuring-radius-server.html?fbclid=IwAR2QK5YV7-82uuuwhdFUkbiDJ6nxmNTSQu33uzoRCjVJ6QYdZlM0DJdFnjY
+	Debian Linux FreeRADIUS+MySQL認證架設筆記 @ Nightmare的胡言亂語 :: 痞客邦 ::: https://nsysumis94.pixnet.net/blog/post/24509813-debian-linux-freeradius%2Bmysql%E8%AA%8D%E8%AD%89%E6%9E%B6%E8%A8%AD%E7%AD%86%E8%A8%98?fbclid=IwAR0JScnSJHDxJBY8ZPhSDuSKe5W1xHJceglSQ40WlQp8rrQIlV7_qJVwu-8
+	TCP/IP 定址與子網路 - Windows Client: https://support.microsoft.com/zh-tw/help/164015/understanding-tcp-ip-addressing-and-subnetting-basics
+	介紹 | Go 语言圣经 中文版: https://wizardforcel.gitbooks.io/gopl-zh/content/
+	docker安裝apache、mariadb、php | 聰明的生活: https://blog.yslifes.com/archives/2523
+	利用Caddy实现Hugo个人博客的自动化部署: https://blog.wangjunfeng.com/post/caddy-hugo/
+	CentOS 7 安裝 Nginx、MySQL/MariaDB、PHP7，架設 LEMP 網頁伺服器筆記 - G. T. Wang: https://blog.gtwang.org/linux/linode-centos-7-nginx-mysql-mariadb-php-7-installation-notes/
+	Gmail: https://mail.google.com/mail/u/0/?hl=zh-TW&shva=1
+	C++ Gossip: https://openhome.cc/Gossip/CppGossip/index.html
+	Postfix SMTP + Dovecot 加密 SSL / TLS: https://shazi.info/postfix-smtp-dovecot-%E5%8A%A0%E5%AF%86-ssl-tls/
+	Ubuntu Linux 使用 Tor 與 Privoxy 架設匿名網頁代理伺服器 - G. T. Wang: https://blog.gtwang.org/linux/ubuntu-linux-use-tor-and-privoxy-to-build-anonymous-http-proxy/
+	樹莓派 Raspberry Pi 架設 Tor 匿名洋蔥網路代理伺服器 - G. T. Wang: https://blog.gtwang.org/iot/raspberry-pi-tor-router-onion-pi-proxy/
+	Rocket入門指南 第一章：認識Rocket Web框架(Web Framework): https://magiclen.org/rocket-introduction/
+
+Cluster 22: ipfs (0.018892858759500086)
+	GitHub - miaoski/ipfs-tutorial: IPFS 筆記和教學 (繁體中文): https://github.com/miaoski/ipfs-tutorial
+	CentOS 7 安裝 KVM/QEMU 虛擬機器教學 - G. T. Wang: https://blog.gtwang.org/linux/centos-7-install-kvm-qemu-virtual-machine-tutorial/
+	reforestation - Synology DiskStation: https://dsm.reforestation.tw/
+	Debian Chroot: https://github.com/SynoCommunity/spksrc/wiki/Debian-Chroot
+	Synology 的 Virtual Machine Manager 套件讓你輕鬆把玩虛擬機器: https://www.zi.media/@walker-a/post/AaH3Zg
+	IPFS Gateway · Cloudflare Web3 docs: https://developers.cloudflare.com/distributed-web/ipfs-gateway/
+	IPFS 分散式檔案系統 – 安裝及使用教學 - Samson's Blog: https://www.samsonhoi.com/705/ipfs-basic-tutorial
+	Planet: https://www.planetable.xyz/
+
+Cluster 20: github (0.009080461716869402)
+	GitHub: Let’s build from here: https://github.com/
+	Wancat Gitea: https://git.wancat.cc/
+	GitHub - lancatlin/iscn-rss-issuer: https://github.com/lancatlin/iscn-rss-issuer
+	Merging vs. Rebasing | Atlassian Git Tutorial: https://www.atlassian.com/git/tutorials/merging-vs-rebasing
+	GitHub - charmbracelet/bubbletea: A powerful little TUI framework 🏗: https://github.com/charmbracelet/bubbletea
+	GitHub - ntutiae/ntutiae.github.io: https://github.com/ntutiae/ntutiae.github.io
+	GitHub - stuicey/SSHy: HTML5 SSH Web Client: https://github.com/stuicey/SSHy
+	GitHub - maticnetwork/whitepaper: Matic whitepaper: https://github.com/maticnetwork/whitepaper
+	GitHub - WillyWu0120/DeepLearningPretreatment: https://github.com/WillyWu0120/DeepLearningPretreatment
+	Build software better, together: https://github.com/irene-tiamo/DeepLearningPretreatment
+	GitHub - schollz/croc: Easily and securely send things from one computer to another :package:: https://github.com/schollz/croc
+	GitHub - jitsi/jibri: Jitsi BRoadcasting Infrastructure: https://github.com/jitsi/jibri
+	Simple Git tutorial for beginners | Nulab: https://backlog.com/git-tutorial/tw/
+	Linchpins-team: https://github.com/Linchpins-team
+	GitHub - WANcatServer/FireWheel: https://github.com/LancatServer/FireWheel
+	lancatlin - Overview: https://github.com/lancatlin
+	Build software better, together: https://github.com/Yukaii/readmoo-api
+	GitHub - kilogold/Metasave: https://github.com/kilogold/HackWeek-Sept2021
+	GitHub - haveno-dex/haveno: Decentralized P2P exchange built on Monero and Tor: https://github.com/haveno-dex/haveno
+	GitHub - depub-team/depub.space: Monorepo for DePub Space projects: https://github.com/depub-team/depub.space
+	Build software better, together: https://github.com/i3thuan5/rime-taigi
+	GitHub - justlaputa/newsletter2rss: convert email newsletter to rss: https://github.com/justlaputa/newsletter2rss
+
+Cluster 15: 挑戰手機市場最低價 (0.0008314463150937383)
+	如何在Linux REAPER里显示中文 - 啦哆咪: https://lado.me/2021/04/11/how-to-display-cjk-in-reaper/
+	【進擊的巨人】你以為最終卷只加了八頁嗎? 實際上加了三十幾頁的內容(上) | 結局 分析 - Yusyuu: https://yusyuu.com/%E3%80%90%E9%80%B2%E6%93%8A%E7%9A%84%E5%B7%A8%E4%BA%BA%E3%80%91%E4%BD%A0%E4%BB%A5%E7%82%BA%E6%9C%80%E7%B5%82%E5%8D%B7%E5%8F%AA%E5%8A%A0%E4%BA%86%E5%85%AB%E9%A0%81%E5%97%8E-%E5%AF%A6%E9%9A%9B%E4%B8%8A/
+	歡迎光臨博客來: https://www.books.com.tw/
+	yoyohand 手作飾物 | FunNow - On-demand online booking platform for Restaurants, Accommodations, and Massages: https://www.myfunnow.com/en/branches/3038781481316?utm_campaign=blog_673
+	超自由手作皮革體驗課 - 廢革手創革物 SCRAP | FunNow - On-demand online booking platform for Restaurants, Accommodations, and Massages: https://www.myfunnow.com/en/products/3131862208178
+	【2023】臥推椅怎麼挑？4 款臥推椅推薦 - Jo 滾去健身吧: https://jo-fitness.com/bench-recommendation/#i
+	【HomeGym】臥推椅全攻略：TOP-6推薦，多功能健身椅真的實用嗎？2023評比 | PHYSICFIT: https://physicfit.com/homegym-bench/
+	使用 Mutt 收发邮件吧！ · Coda: https://coda.world/neomutt/
+	SHARP系列手機超低價格,規格,跑分,評價總覽|傑昇通信~挑戰手機市場最低價: https://www.jyes.com.tw/product.php?act=list&cid=46
+	SHARP系列手機超低價格,規格,跑分,評價總覽|傑昇通信~挑戰手機市場最低價: https://www.jyes.com.tw/product.php?act=list&cid=46&sort=&order=&keywords=iPhone+13&radios%5B5%5D=&radios%5B3%5D=52
+	工程數學 - 微分方程 - 臺大開放式課程 (NTU OpenCourseWare): http://ocw.aca.ntu.edu.tw/ntu-ocw/ocw/cou/101S127
+	HamiVideo: https://hamivideo.hinet.net/hamivideo/product/187048.do?cs=2
+	Student Leave Form (班級請假表): https://docs.google.com/forms/d/1SWnTVeXhKTvBKJQSDJ-KM84d93aRo7nasZlNEWpaodY/viewform?edit_requested=true
+	行列查碼：最好用的行列輸入法查碼網站 | FISH UP 行列查碼: https://array30.misterfishup.com/dictionary.html
+	文件: https://hexo.io/zh-tw/docs/
+	資訊組織-參資MARC 21欄位對映RDA @ 鳳莛之有關資訊組織和開放資源的23事 :: 痞客邦 ::: http://klkly23.pixnet.net/blog/post/176271744-%E8%B3%87%E8%A8%8A%E7%B5%84%E7%B9%94-%E5%8F%83%E8%B3%87marc-21%E6%AC%84%E4%BD%8D%E5%B0%8D%E6%98%A0rda
+	影音字典｜VoiceTube 看影片學英語: https://tw.voicetube.com/definition?ref=footer
+	MySQL 超新手入門（8）儲存引擎與資料型態: http://www.codedata.com.tw/database/mysql-tutorial-8-storage-engine-datatype/
+	磁碟救援 TestDisk使用教學: https://rengo921.blogspot.com/2008/05/testdisk.html
+	MagicLen: https://magiclen.org/macbuntu-18-04/
+	用 Tiny Tiny RSS 自建 RSS 服务: https://type.cyhsu.xyz/2017/10/use-ttrss-to-build-a-self-hosted-rss-service/
+	（另一篇）Tiny Tiny RSS 教程 - 少数派: https://sspai.com/post/42787
+	Vim 与中文输入法 - 黄玄的博客 | Hux Blog: http://huangxuan.me/2018/10/06/vim-cn-im/
+	CSS（樣式表） - 學習該如何開發 Web | MDN: https://developer.mozilla.org/zh-TW/docs/Learn/CSS
+	分享|可以买到 Linux 电脑的 10 个地方: https://linux.cn/article-10982-1.html?utm_source=google&utm_medium=rss
+	如何在Linux作業系統上破解RAR或是ZIP壓縮檔的密碼？: https://magiclen.org/archive-crack/
+	上市股票除權除息預告表: https://data.gov.tw/dataset/89748
+	rclone 掛載硬碟小記: https://malagege.github.io/blog/2019/10/14/rclone-%E6%8E%9B%E8%BC%89%E7%A1%AC%E7%A2%9F%E5%B0%8F%E8%A8%98/
+	[gogoro 資費比較] gogoro與一般機車每年貴2k 油錢/維修/稅賦費用比較表 | 這就是人生: https://www.beurlife.com/2018/08/gogoro-vs-motorcycle-opex-compare.html
+	三角肌訓練，打造完美肩線 - superfit: https://superfit.com.tw/workout/how-to-train-deltoid/
+	打造完美三角肌｜肩部解剖以及訓練課表｜Peeta Fitness 健身網: https://www.peeta.tw/workout/deltoid/
+	健身新手該怎麼開始訓練？｜新手課表安排｜Peeta Fitness 健身網: https://www.peeta.tw/workout/workout-beginner/
+	区块链从入门到入魔5：Avalanche链详解: https://zhuanlan.zhihu.com/p/419778767
+	【滑輪下拉全攻略】１０種下拉動作變化，幫你打造最強鬼背！感受度大幅提升 | PHYSICFIT: https://physicfit.com/lat-pulldown/
+	三角肌訓練 － 肩膀訓練方法大全，打造立體前中後三角肌 - 台灣營養: https://www.taiwannutrition.com/blog/ultimate-guide-for-deltoid-training/
+	是否練不壯吃不胖？瘦子難增肌？看這篇就對了！｜Peeta Fitness 健身網: https://www.peeta.tw/workout/way-for-hard-gainer/
+	中華電信雲端VPS主機動物園，8G RAM 同業半價不到，台灣最便宜VPS挑戰: https://www.serverzoo.com/chunghwa-taipei-hinet-cloud-cheap-vps
+	3种方法来穿鞋带 - wikiHow: https://zh.wikihow.com/%E7%A9%BF%E9%9E%8B%E5%B8%A6
+	台台合併專區 – 我變我們 一啟未來成就無限 - 台灣大哥大: https://www.tstartel.com/CWS/estore_payasyougo.php?utm_source=google&utm_medium=cpc&utm_campaign=payasyougo&utm_content=keywords_proudctPYG&utm_term=GOOGLE
+	行列輸入法：超厲害中文輸入法你絕對後悔太晚認識 | FISH UP 行列查碼: https://array30.misterfishup.com/
+	科普 | 理解閃電網路Part-2：構建網路: https://www.blocktempo.com/understanding-the-lightning-network-part-2/
+
+Cluster 30: audio (-0.00010580829111859203)
+	Buy VST Plugins, Audio Units, AAX, Instruments and Effects, Download Free Plugins - KVR Audio Software: https://www.kvraudio.com/
+	Bossa Nova Drum Set Style Essentials: https://drumsettips.org/bossa-nova-drum-style-latin-drum-set-beats/
+	Loudness Penalty: https://www.loudnesspenalty.com/#
+	Rachel Platten - Fight Song - Piano Cover & Sheets: https://www.youtube.com/watch?v=9G7zlxqhJRs
+	GitHub - spotify/basic-pitch: A lightweight yet powerful audio-to-MIDI converter with pitch bend detection: https://github.com/spotify/basic-pitch
+	billwurtz: https://billwurtz.com/songs.html
+	Behringer UMC404HD Review (audio performance tested and compared): https://www.youtube.com/watch?v=U_SRRhXnPrA
+	Beta Suite | GPU Audio: https://earlyaccess.gpu.audio/
+	AB-3000 2.0 FID Adjustable Weight Bench | REP Fitness: https://repfitness.com/products/ab-3000-fid-adjustable-bench
+	Mixage Software: https://www.mixagesoftware.com/
+	OVERVIEW Full Catalog of All Products | Native Instruments: https://www.native-instruments.com/en/specials/2022/soundwide-offer/
+	LABS — Virtual Instruments: https://labs.spitfireaudio.com/
+	Handbook for MuseScore 2: https://musescore.org/en/handbook-2
+	S. Christian Collins - Pianist, Composer, Virtual Instrument Designer: http://www.schristiancollins.com/generaluser.php
+	Fix no audio through HDMI when connected to TV in elementary OS: https://www.fosslinux.com/455/fix-no-audio-through-hdmi-when-connected-to-tv-in-elementary-os-ubuntu.htm
+	musictheory.net: https://www.musictheory.net/
+	Frozen 2 (Original Motion Picture Soundtrack) by Various Artists: https://genius.com/albums/Various-artists/Frozen-2-original-motion-picture-soundtrack
+	musictheory.net - Exercises: https://www.musictheory.net/exercises
+	Freesound: https://www.freesound.org/
+	一次搞懂混音工程需要的所有設備：（二）聲音工程的心臟-Audio Interface 錄音介面 @ Balanced Audio Lab 平衡音訊實驗室 :: 痞客邦 ::: https://a85115230.pixnet.net/blog/post/399683908
+
+Cluster 9: 最潮音樂社群 (-0.010625091171823442)
+	前言 | 新生: https://b.xinshengdaxue.com/index.html
+	今年夏天: https://www.youtube.com/watch?v=Rd46U_ybdk4&feature=youtu.be
+	1Know 翻轉你的學習: http://www.1know.net/#!/explore
+	Yahoo奇摩: https://tw.yahoo.com/
+	前言 · Python学习笔记 · 看云: https://www.kancloud.cn/digest/python-notes/163813
+	ピアノ曲集 ニーア レプリカント ver.1.22474487139.. オフィシャル・スコア・ブック: https://www.talubook.com/index.php?route=product/product&product_id=25921&search=NieR&description=true
+	知識衛星 SAT. KNOWLEDGE｜線上課程平台｜改變，來自有感學習: https://sat.cool/member/learning/course
+	西索期待的一天: https://m.youtube.com/watch?v=nhNW9tfLj34
+	當代論壇: https://modernmusician.com/forums/index.php
+	10710CS 542200 平行程式: https://ocw.nthu.edu.tw/ocw/index.php?page=course&cid=231
+	檸檬卷 Janet: https://lemonjanet.com/
+	基礎代謝率BMR計算機｜TDEE計算｜健康小幫手: https://tools.heho.com.tw/bmr/
+	日本留學全攻略：學校介紹、申請規劃、學費、生活費統整 - 環球行雜誌: https://blog.wef.com.tw/%E5%A6%82%E4%BD%95%E8%A6%8F%E5%8A%83%E6%97%A5%E6%9C%AC%E7%95%99%E5%AD%B8%EF%BC%8C%E5%93%AA%E7%A8%AE%E5%AD%B8%E6%A0%A1%E9%81%A9%E5%90%88%E6%88%91%E5%91%A2/
+	JPTIP 日本留遊學．打工．住宿｜全台最大赴日一站式服務網站: https://www.jptip.com.tw/senmon/osm
+	還想留在日本久一點！長期簽證的種類與申請方式整理 | MATCHA - 日本線上旅遊觀光雜誌: https://matcha-jp.com/tw/9945
+	最快1年可取得日本永久居留權？ 移民日本的6個方法: https://japanlifemedia.com/work/88/
+	【人類圖】人類圖分析》關於投射者的點滴 @ 蘇蘇。愛自由 :: 痞客邦 ::: https://catwang0717.pixnet.net/blog/post/311070893-%e4%ba%ba%e9%a1%9e%e5%9c%96%e5%88%86%e6%9e%90%e3%80%8b%e9%97%9c%e6%96%bc%e6%8a%95%e5%b0%84%e8%80%85%e7%9a%84%e9%bb%9e%e6%bb%b4
+	信任的演化: https://audreyt.github.io/trust-zh-TW/
+	永福橋腳踏車牽引道|公館到永和（永和到公館也是一樣路線） @ Go back and tell it. :: 痞客邦 ::: https://littlexmy.pixnet.net/blog/post/273292708
+	新しく、スタジオジブリ5作品の場面写真を追加提供致します - スタジオジブリ｜STUDIO GHIBLI: https://www.ghibli.jp/info/013409/
+	StreetVoice 街聲 - 最潮音樂社群: https://streetvoice.com/
+	StreetVoice 街聲 - 最潮音樂社群: http://streetvoice.com/
+	我是朱家安，AMA: https://old.reddit.com/r/taiwanica/comments/wj5qjj/%E6%88%91%E6%98%AF%E6%9C%B1%E5%AE%B6%E5%AE%89ama/?sort=new
+	戴佩妮《愛在被愛之前》 Official 完整版 MV [HD]: http://www.youtube.com/watch?v=ydjAxnxUcOc
+	自訂 Firefox 的控制項、按鈕以及工具列 | Firefox 說明: https://support.mozilla.org/zh-TW/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize
+	cython 初探 @ 我的小小AI 天地 :: 痞客邦 ::: http://darren1231.pixnet.net/blog/post/336855350-cython-%E5%88%9D%E6%8E%A2
+	愛丁堡夏季的獨特魅力：除了國際藝術節，藝穗節與皇家軍樂節也不能錯過！ - The News Lens 關鍵評論網: https://www.thenewslens.com/article/40567
+	從零開始的 Telegram Bot | Sean's Note: https://blog.sean.taipei/2017/05/telegram-bot
+	UI UX設計是什麼？用9個提高網站轉換率的方法告訴你: https://transbiz.com.tw/ui-ux-design-difference/
+	了解 Mozilla: https://www.mozilla.org/zh-TW/about/
+	Notification（通知）：利用 JavaScript 實作瀏覽器推播通知 | Summer。桑莫。夏天: https://cythilya.github.io/2017/07/09/notification/
+	直播地圖 - 全台灣最即時的影像紀錄: https://works.ioa.tw/LiveTaiwan/index.html
+	考生救星 Anki 教學：背單字與練習考古題的最佳軟體: https://www.playpcesor.com/2016/04/anki.html
+	盤後資訊 > 個股日成交資訊: https://data.gov.tw/dataset/11549
+	Yahoo奇摩股市: https://tw.stock.yahoo.com/
+	【故事・臺北】 第六話-『迪化大幫小傳』: https://www.youtube.com/watch?v=0TtKB-epfiE&list=PLwItru4bLdHxZGkeRCRen6dwyqbtzQUvo&index=7
+	【故事・臺北】 第零話 -『年貨大街』: https://www.youtube.com/watch?v=Qi0Dp9dYX1Y&list=PLwItru4bLdHxZGkeRCRen6dwyqbtzQUvo&index=1
+	Firefox - 透過隱私優先的產品保護您的線上生活: https://www.mozilla.org/zh-TW/firefox/central/
+	了解 Mozilla: http://www.mozilla.com/zh-TW/about/
+	朱家安：如果我真的不相信有鬼，鬼故事對我還會有效果嗎？ - The News Lens 關鍵評論網: https://www.thenewslens.com/article/161538
+	線上學台語發音與諺語：三個查詢臺灣閩南語的辭典網站: https://www.playpcesor.com/2017/03/holodict.html?m=1
+	防空疏散避難地圖: https://kiang.github.io/air_raid_shelter/
+	Pretty-good: https://prettygood.gallery/
+	2024網友熱推【男生髮型】流行髮型特輯 | StyleMap美配: https://style-map.com/style/4982
+	西門町髮型設計師 Benny | StyleMap美配: https://style-map.com/post/275704
+	Nic | StyleMap美配: https://style-map.com/post/254710
+	Han Xiao Che | StyleMap美配: https://style-map.com/post/284155
+	2021.04.10 有人問我會否移民時我的十種回應 - chungkin Express: https://ckxpress.com/on-emigration/
+	給《17歲少女》回信 - chungkin Express: https://ckxpress.com/letter-to-17/
+	唐綺陽官方專屬星盤: https://astrolabe.astroinfo.com.tw/
+
+Cluster 2: templates (-0.01779051744379103)
+	HackMD - Collaborative Markdown Knowledge Base: https://hackmd.io/
+	Indent with tabs, align with spaces: https://vim.fandom.com/wiki/Indent_with_tabs,_align_with_spaces
+	The HTML presentation framework | reveal.js: https://revealjs.com/
+	Documentation: https://gin-gonic.com/docs/
+	GitHub - gin-contrib/multitemplate: This is a custom HTML render to support multi templates: https://github.com/gin-contrib/multitemplate
+	likenft-spec.md: https://gist.github.com/rickmak/e0d1cd776341f729d4bcebe7a4babedf
+	This week in KDE: custom tiling: https://pointieststick.com/2022/12/02/this-week-in-kde-custom-tiling/
+	Makefile cheat sheet: https://gist.github.com/evertrol/4b6fd05f3b6be2b331c60638b1af7101
+	Quarter Tiling: https://store.kde.org/p/1187647/
+	CutiePi - World's thinnest Raspberry Pi 4 tablet: https://shop.cutiepi.io/products/cutiepi-tablet
+	GitHub - cutiepi-io/cutiepi-doc: Documentation for CutiePi tablet: https://github.com/cutiepi-io/cutiepi-doc
+	Abey Resume Template - Overleaf, Online LaTeX Editor: https://www.overleaf.com/latex/templates/abey-resume-template/jxstkffrxxmh
+	resume template (CJK support) - Overleaf, Online LaTeX Editor: https://www.overleaf.com/latex/templates/resume-template-cjk-support/yvmsdbdwmyhc
+	CS/IT/SWE Resume Template - Overleaf, Online LaTeX Editor: https://www.overleaf.com/latex/templates/cs-slash-it-slash-swe-resume-template/ncxgzcgknkmf
+	Notion – The all-in-one workspace for your notes, tasks, wikis, and databases.: https://www.notion.so/likecoin/LikeCoin-Team-0bf9d11ba976439eab55cc1007b542bc
+	GitHub - zalando/gin-oauth2: Middleware for Gin Framework users who also want to use OAuth2: https://github.com/zalando/gin-oauth2
+	GitHub - klaudiosinani/tusk: Refined Evernote desktop app: https://github.com/klauscfhq/tusk
+	regex101: build, test, and debug regex: https://regex101.com/
+	Chinese - Overleaf, Online LaTeX Editor: https://www.overleaf.com/learn/latex/Chinese
+	Helix: https://helix-editor.com/
+
+Cluster 13: linux (-0.01863465749969085)
+	Pass: The Standard Unix Password Manager: https://www.passwordstore.org/
+	An introduction to Pluggable Authentication Modules (PAM) in Linux: https://www.redhat.com/sysadmin/pluggable-authentication-modules-pam
+	Installing from source - Mastodon documentation: https://docs.joinmastodon.org/admin/install/
+	PULP FAQs: https://pulp-platform.org/
+	UTM: https://mac.getutm.app/
+	Username & Password Tutorial: Login Prompt: https://www.passportjs.org/tutorials/password/prompt/
+	GitHub - linux-odyssey/linux-odyssey: Learn Linux commands in a Game!: https://github.com/linux-odyssey/linux-odyssey
+	Linux Standard Deployment | Bitwarden Help Center: https://help.bitwarden.com/hosting/
+	How to Install Linux OS on USB Drive and Run it On Any PC: https://www.tecmint.com/install-linux-os-on-usb-drive/
+	Creating Systemd Service Files: https://www.devdungeon.com/content/creating-systemd-service-files
+	Basics | Cheat sheets | Linux Command Library: https://linuxcommandlibrary.com/index.html
+	Manjaro Linux Forum: http://forum.manjaro.org/
+	Manjaro: https://manjaro.org/
+	Create A Persistent Storage Live USB With Ubuntu, Linux Mint Or Debian (UEFI, >4GB Persistence Support): https://www.linuxuprising.com/2019/03/create-persistent-storage-live-usb-with.html?m=1
+	Modern Alternatives to Some of the Classic Linux Commands: https://itsfoss.com/legacy-linux-commands-alternatives/
+
+Cluster 7: podcast (-0.01880843135026785)
+	Invidious: https://yt.wancat.cc/
+	Luke's Videos: https://videos.lukesmith.xyz/
+	Podcasting made easy! Start your podcast today: https://zencastr.com/dashboard
+	Ben Eater: https://eater.net/
+	Free yourself from the Spotify desktop client with spotifyd: https://jonathanchang.org/blog/setting-up-spotifyd-on-macos/
+	Spotify for Podcasters: https://podcasters.spotify.com/podcast/6aVtzVA7tQjtu6lsUQvoGs/overview
+	Spotify for Podcasters: https://podcasters.spotify.com/podcast/1vG3SXIo0u5jtDOwo44Sk5/overview
+	g0v OPEN PODCAST 節目錄製申請 - HackMD: https://g0v.hackmd.io/@jothon/rJpjtSMyc
+	Ben Eater: https://eater.net/8bit/
+	How to download an MP3 track from a YouTube video: https://askubuntu.com/questions/178481/how-to-download-an-mp3-track-from-a-youtube-video
+	Yahoo奇摩App 你的生活情報入口: https://tw.answers.yahoo.com/question/index?qid=20120811000016KK02915
+	[Ep. 75] 我們的《原子習慣》讀後感 | Wiwi 遇到人生瓶頸的時候都這樣做 | 「場合」真的很重要 | 想要追比自己大的女生，卻一直被當弟弟對待怎麼辦？: https://wiwi.video/videos/watch/c47fde4c-cff6-4550-ab28-fe955929f775
+	[Ep. 80] 戰爭隨時可能會發生 | Normalcy Bias 會要你的命 | 兩千年前的性愛教戰手冊 | 來路不明的 QRCode 不要掃 | 如何讓作品被別人看到？: https://wiwi.video/w/4FxXjJPUenQJ6MpdDRpCAP
+
+Cluster 44: select (-0.025501672085374592)
+	zsh preexec command modification: https://stackoverflow.com/questions/12580675/zsh-preexec-command-modification
+	GIN index not used when adding order clause: https://dba.stackexchange.com/questions/113132/gin-index-not-used-when-adding-order-clause
+	Postgres - Copy Operation 細節探討: https://blog.kennycoder.io/2021/09/19/Postgres-Copy-Operation-%E7%B4%B0%E7%AF%80%E6%8E%A2%E8%A8%8E/
+	Using a subquery in 'FROM' in gorm: https://stackoverflow.com/questions/46807891/using-a-subquery-in-from-in-gorm
+	Query: https://gorm.io/docs/query.html#Joins
+	Impermanent Loss Estimator - MyCointool: https://mycointool.com/en/ImpermanentLoss
+	Backup fails with ReadError("raise ReadError("unexpected end of data") (#67) · Issues · duplicity / duplicity · GitLab: https://gitlab.com/duplicity/duplicity/-/issues/67
+	Stop zsh incorporating /etc/hosts in autocomplete: https://superuser.com/questions/1098829/stop-zsh-incorporating-etc-hosts-in-autocomplete
+	ondelete optional parameter: https://www.odoo.com/forum/help-1/ondelete-optional-parameter-19283
+	Promise.all with Async/Await: https://www.taniarascia.com/promise-all-with-async-await/
+
+Cluster 43: 3d (-0.03248687236919068)
+	Programs and Equipment I Use | Luke's Webpage: https://lukesmith.xyz/programs/
+	Customizing Zoom and Scroll in REAPER | The REAPER Blog: https://reaperblog.net/2016/06/customizing-zoom-and-scroll/
+	animefaces-danbooru: https://www.kaggle.com/lukexng/animefaces-512x512
+	Anime Face Dataset: https://www.kaggle.com/splcher/animefacedataset
+	DaVinci Resolve 18 | Blackmagic Design: https://www.blackmagicdesign.com/products/davinciresolve
+	AI Art Generator | Create AI Art and Images for Free | OpenArt: https://openart.ai/?discoveryModel=sd
+	The Ai Art - AI, Art, and everything in between: https://www.the-ai-art.com/modifiers
+	3ders.org - how to build 3d printer: https://www.3ders.org/3d-printer/how-to-build-3d-printer.html
+	StencylWorks--一款強大的"Scratch-like"遊戲App開發工具: http://jimmyscratchlab.blogspot.tw/2012/02/stencyl-scratch-like-tool.html
+	Scratch - Imagine, Program, Share: https://scratch.mit.edu/
+	Using the Koha Docker image: https://github.com/digibib/koha-docker/wiki/Using-the-Koha-Docker-image
+	Coolors - The super fast color palettes generator!: https://coolors.co/
+	Nimble Slides: https://nimbleslides.blogspot.com/
+	Best 3D Design Software for free download in Windows/Mac/Linux: https://teknologya.com/3d-design-software-for-free/
+	Image Processing in Javascript - webkid blog: https://webkid.io/blog/image-processing-in-javascript/
+	Photon: A high-performance WebAssembly image processing library.: https://silvia-odwyer.github.io/photon/
+
+Cluster 18: likecoin (-0.03553184313484682)
+	REStake | Auto-compound your staking rewards: https://restake.app/likecoin
+	depub.space: https://stag.depub.space/
+	LikeCoin - Governance and Staking: https://dao.like.co/welcome
+	Dollar Street - photos as data to kill country stereotypes: https://www.gapminder.org/dollar-street
+	Big Dipper | LikeCoin Block Explorer: https://likecoin.bigdipper.live/
+	Liker.Social: https://liker.social/
+	ValidationChain | express-validator: https://express-validator.github.io/docs/api/validation-chain
+	Account Details: https://likecoin.bigdipper.live/account/cosmos160xm9le9rz5fl42hq0xqunj303j4n36cr53mn7
+	LikeCoin: https://like.co/
+	Liker Mastodon 計畫募資開始 - 林宏信 (@wancat): https://matters.news/@wancat/liker-mastodon-%E8%A8%88%E7%95%AB%E5%8B%9F%E8%B3%87%E9%96%8B%E5%A7%8B-bafyreihrd6z2bvlw2dvzshzu47xhzdcjhuw3lxkckajbgnezzfvgqct6nm
+	Blockchains should not be democracies | HackerNoon: https://hackernoon.com/blockchains-should-not-be-democracies-14379e0e23ad
+	Resisting Temptation...: https://videos.lukesmith.xyz/w/ts7vvbtonF7US9mHLksDwY
+	How Country Livin' makes you Richer.: https://videos.lukesmith.xyz/w/761peJCDnReRVyQfFRGK1j
+
+Cluster 0: website (-0.03817711969644859)
+	How Does SSH Work? {Detailed Overview} | pNAP KB: https://phoenixnap.com/kb/how-does-ssh-work
+	Dashboard - MINEXMR: https://minexmr.com/dashboard?address=86k9nxEjci4BRaEDuU715Wi1GKqtDSMKq2qnpFZ4U8bv6cCXXfc9zgSJztZEbpVbCHiGznFf57ECQbKPjSMGpDYxDbsZkEX
+	Meet: https://meet.google.com/wvc-vmim-eov
+	StatusCake - Uptime monitoring, Page speed monitoring, and more: https://statuscake.com/
+	Google Sites: Sign-in: https://sites.google.com/site/xianshangkanxi/home/movie/movie2015/thedanishgirl
+	monal.im: https://monal.im/
+	Based Cooking: https://based.cooking/
+	Keplr Dashboard: https://wallet.keplr.app/
+	Keplr Dashboard: https://wallet.keplr.app/#/dashboard
+	SSH - Advanced Usage | LandChad.net: https://landchad.net/ssh-advanced/
+	StatusCake - Uptime monitoring, Page speed monitoring, and more: http://statuscake.com/
+	EasyDAI: https://easydai.app/
+	LandChad.net: https://landchad.net/
+	Step Finance | Solana: https://app.step.finance/#/dashboard
+	Plausible Analytics: https://plausible.io/
+	BTCPay Server: https://btcpayserver.org/
+	SideShift.ai - No Sign-Up Crypto Exchange: https://sideshift.ai/btc/xmr
+	Yahoo Finance - Stock Market Live, Quotes, Business & Finance News: https://finance.yahoo.com/
+	Free Stock APIs in JSON & Excel | Alpha Vantage: https://www.alphavantage.co/
+	Linus / earthwalker · GitLab: https://gitlab.com/glatteis/earthwalker
+	Compare Prices of All Top-Level Domains | TLD-List: https://tld-list.com/
+	matataki.io: https://www.matataki.io/article
+	Google Maps: https://www.google.com/maps
+	Google Maps: https://www.google.com/maps/@25.0526828,121.5021845,15.75z
+	Google Drive: Sign-in: https://drive.google.com/drive/u/0/
+	nload - Monitor Linux Network Bandwidth Usage in Real Time: https://www.tecmint.com/nload-monitor-linux-network-traffic-bandwidth-usage/
+	Matrix Synapse | LandChad.net: https://landchad.net/matrix
+	Managing a website with Git by valentino1337butiusegitlab · Pull Request #113 · LukeSmithxyz/landchad: https://github.com/LukeSmithxyz/landchad/pull/113
+	Firefly III - A free and open source personal finance manager: https://www.firefly-iii.org/
+
+Cluster 1: verilog (-0.04344392087310553)
+	鍵盤測試 Keyboard Test: https://zhouer.org/KeyboardTest/
+	Label & Button 标签和按钮 - 窗口 Tkinter | 莫烦Python: https://morvanzhou.github.io/tutorials/python-basic/tkinter/2-01-label-button/
+	Pomofocus: https://pomofocus.io/
+	How to make a system call in C: https://jameshfisher.com/2018/02/19/how-to-syscall-in-c/
+	System Calls (The GNU C Library): https://www.gnu.org/software/libc/manual/html_node/System-Calls.html
+	Networking Basics | LandChad.net: https://landchad.net/networking/
+	NLP預訓練家族 | Transformer-XL及其進化XLNet_newbeenlp - MdEditor: https://www.gushiciku.cn/pl/gXrC/zh-tw
+	GitHub - THUDM/Chinese-Transformer-XL: https://github.com/THUDM/Chinese-Transformer-XL
+	FPGA Software Download Center: https://fpgasoftware.intel.com/20.3/?edition=pro&platform=linux&product=modelsim_ae#tabs-2
+	タイピングテスト Japanese - 10FastFingers.com: https://10fastfingers.com/typing-test/japanese
+	Online Verilog Compiler | Run Verilog Code Online: https://www.tutorialspoint.com/compile_verilog_online.php
+	Tmux Cheat Sheet & Quick Reference | Session, window, pane and more: https://tmuxcheatsheet.com/
+	Icarus Verilog: https://iverilog.fandom.com/wiki/Main_Page
+	The difference between x and z: https://stackoverflow.com/questions/49987012/the-difference-between-x-and-z
+	Arduino Reference - Arduino Reference: https://www.arduino.cc/reference/en/
+	IDA Free: https://hex-rays.com/ida-free/
+	Window setInterval() Method: https://www.w3schools.com/jsref/met_win_setinterval.asp
+	AimBooster: http://www.aimbooster.com/
+	使用 Control 鍵切換中西文，上屏已輸入的編碼；令 Caps Lock 改變字母的大小寫: https://gist.github.com/lotem/2981316
+	An Overview of the Interface: http://brunoruviaro.github.io/ardour4-tutorial/an-overview-of-the-interface/
+	The Ardour Manual - Ardour Table of Contents: http://manual.ardour.org/toc/
+	Will contracts replace interfaces?: https://speakerdeck.com/campoy/will-contracts-replace-interfaces?slide=140
+	Tmux Tutorial: https://leimao.github.io/blog/Tmux-Tutorial/
+	Why do executables depend on the OS but not on the CPU?: https://softwareengineering.stackexchange.com/questions/251250/why-do-executables-depend-on-the-os-but-not-on-the-cpu
+	Advanced Control Technology Lab: https://sites.google.com/view/actl-web
+
+Cluster 8: api (-0.043523128678583926)
+	Build a Single Page Application (SPA) Site With Vanilla.js: https://blog.jeremylikness.com/blog/build-a-spa-site-with-vanillajs/
+	LikeCoin API: https://api.docs.like.co/
+	discord.js Guide: https://discordjs.guide/
+	discord.js | Reply to Message (Actual Reply with Reply Decoration): https://stackoverflow.com/questions/65114050/discord-js-reply-to-message-actual-reply-with-reply-decoration
+	enable cross-origin resource sharing: https://enable-cors.org/server.html
+	GitHub - Bukkit/Bukkit: The Minecraft Mod API: https://github.com/Bukkit/Bukkit
+	API Reference | Vue Router: https://v3.router.vuejs.org/api/#route-object-properties
+	Fetching messages: https://github.com/emersion/go-imap/wiki/Fetching-messages
+	How to enable ES6 (and beyond) syntax with Node and Express: https://www.freecodecamp.org/news/how-to-enable-es6-and-beyond-syntax-with-node-and-express-68d3e11fe1ab/
+	Slack is your productivity platform: https://app.slack.com/
+	Is it possible for a website to only have an IPv6 address but not an IPv4 address?: https://www.quora.com/Is-it-possible-for-a-website-to-only-have-an-IPv6-address-but-not-an-IPv4-address
+	OpenID 問題回應和說明: https://paper.dropbox.com/doc/OpenID-ccLS5D9Rxwmhk1LnVys2r
+	GitHub - LukeSmithxyz/mutt-wizard: A system for automatically configuring mutt and isync with a simple interface and safe passwords: https://github.com/LukeSmithxyz/mutt-wizard
+	RFC 6749: The OAuth 2.0 Authorization Framework: https://tools.ietf.org/html/rfc6749#section-1.2
+	API Documentation & Design Tools for Teams | Swagger: https://swagger.io/
+	Getting started with the Porkbun API - Porkbun Knowledge Base: https://kb.porkbun.com/article/190-getting-started-with-the-porkbun-dns-api
+	A modern JavaScript router in 100 lines: https://krasimirtsonev.com/blog/article/A-modern-JavaScript-router-in-100-lines-history-api-pushState-hash-url
+
+Cluster 10: server (-0.047075488304943534)
+	DAO DAO: https://daodao.zone/dao/juno1vntnqevwk47escuxrfrdk99070vs0gczyyx0wa2pp08j25n0ee6qryqhzk
+	Build Your Own Crude FM Radio: https://www.instructables.com/Build-your-own-Crude-FM-Radio/
+	0 A.D.: Empires Ascendant: https://play0ad.com/
+	- Fediverse.Party - explore federated networks: https://fediverse.party/
+	The Space | World’s First NFT Pixel Art Game in Radical Markets: https://www.thespace.game/
+	Elden Ring GB by shin: https://shin.itch.io/elden-ring-gb
+	Getting started with Neovim ☯ Daniel Wayne Armstrong: https://www.dwarmstrong.org/neovim/
+	Meshtastic: https://meshtastic.org/
+	2048 - Ebitengine: https://ebiten.org/examples/2048.html
+	Documentation: https://freeradius.org/documentation/
+	NetworkRADIUS: https://networkradius.com/
+	AAA framework and RADIUS: https://www.youtube.com/watch?v=feHpDc1cLXM
+	PINEPHONE | PINE64: https://www.pine64.org/pinephone/
+	Station: https://station.terra.money/
+	Electrum Lightning Network walkthrough: https://bitcointalk.org/index.php?topic=5259973.0
+	Avalanche: Create Without Limits | dApp Platform: https://www.avax.network/
+	Chihuahua | OmniFlix inSync: https://chihuahua.omniflix.co/
+	LTSC: What is it, and when should it be used?: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/ltsc-what-is-it-and-when-should-it-be-used/ba-p/293181
+	Windows 10 Enterprise LTSC 2021 (64-Bit) : Microsoft : Free Download, Borrow, and Streaming : Internet Archive: https://archive.org/details/Windows10EnterpriseLTSC202164Bit
+	Wayland Core Protocol is Tailored Only for GNOME and That's Not a Good Thing [Opinion]: https://news.itsfoss.com/wayland-core-protocol-issue/
+	Ethereum Attestation Service: https://attest.sh/
+	Enterprise Open Source and Linux | Ubuntu: http://www.ubuntu.com/
+	How To Enable NVIDIA NVENC Rendering In Kdenlive: https://www.youtube.com/watch?v=X14GvmBpq08
+	The world's open source leader: https://www.redhat.com/
+	OKD.io: https://www.openshift.org/
+	DDS Portal – Data Distribution Services: https://www.dds-foundation.org/
+	Dido Solutions | Comprehensive Scalable Testing Environment: https://didosolutions.com/
+
+Cluster 6: code (-0.05278668192525705)
+	Shibuya: https://www.shibuya.xyz/
+	Postcards connecting the world - Postcrossing: https://www.postcrossing.com/
+	1to50: http://zzzscore.com/1to50/en/
+	FutureMe: Write a Letter to your Future Self: https://www.futureme.org/
+	Training on Counting Duplicates: http://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/python
+	Birds Aren't Real | Birds Aren't Real: https://birdsarentreal.com/
+	Network Security and Penetration Test (2022 Fall) - HackMD: https://hackmd.io/@wycchen/1111NSPT
+	GhostlyStock: https://www.ghostlystock.com/
+	sklearn.model_selection.train_test_split: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+	Using the ‘What-If Tool’ to investigate Machine Learning models - KDnuggets: https://www.kdnuggets.com/2019/06/using-what-if-tool-investigate-machine-learning-models.html
+	sklearn.model_selection.StratifiedKFold: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html
+	Is there a simple way to understand special relativity?: https://www.quora.com/Is-there-a-simple-way-to-understand-special-relativity
+	How Special Relativity Makes Magnets Work: https://www.youtube.com/watch?v=1TKSfAkWWN0
+	GitHub - massgravel/Microsoft-Activation-Scripts: A Windows and Office activator using HWID / Ohook / KMS38 / Online KMS activation methods, with a focus on open-source code and fewer antivirus detections.: https://github.com/massgravel/Microsoft-Activation-Scripts
+	M... MY JOB DEFINES ME!: https://videos.lukesmith.xyz/w/cYMkUcvm8qn1ix5P4yNqkn
+	Taste vs Skills 🚣‍♂️: https://refactoring.fm/p/taste-vs-skills
+	It's Nicky Case!: https://ncase.me/
+	36 Questions - How to fall in love: http://36questionsinlove.com/
+	Freakonomics: https://freakonomics.com/
+	Customizing the numbering for pages, figures, sections, equations, theorems, and tables: https://www.stat.berkeley.edu/~paciorek/computingTips/Customizing_numbering_pages.html
+	GitHub - alex/what-happens-when: An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?": https://github.com/alex/what-happens-when
+	42 | Apprendre à coder. Casser les codes. Formation gratuite: https://www.42.us.org/
+	IBM Developer: https://developer.ibm.com/code-and-response/
+	Hire Freelancers & Find Freelance Jobs Online: https://www.freelancer.com/
+	Sign in: https://www.codewars.com/users/sign_in
+	Kialo Edu – The tool to teach critical thinking and rational debate: https://www.kialo-edu.com/
+	Explore Popular Debates, Discussions and Critical Thinking…: https://www.kialo.com/
+	SurveyCake: https://www.surveycake.com/s/gmQba
+	Pickup & Date Questions That Build Attraction: https://understandingrelationships.com/pickup-date-questions-that-build-attraction/13871
+	[NetHack]Legendary wizard is killed by the ultimate boss outside the game next day!?: https://asciinema.org/a/492619
+
+Cluster 16: github (-0.05726703835340838)
+	伪造git提交时间: https://blog.zwithc.me/2019/11/05/how-to-fake-git-commit-date/
+	Word to HTML5 - Convert your DOC to HTML5 for Free Online: http://www.zamzar.com/convert/doc-to-html5/
+	Convert any URL or Web Page to PDF. Online HTML to PDF API service.: http://pdfmyurl.com/
+	How do I change the size of figures drawn with Matplotlib?: https://stackoverflow.com/questions/332289/how-do-you-change-the-size-of-figures-drawn-with-matplotlib
+	pyplot scatter plot marker size: https://stackoverflow.com/questions/14827650/pyplot-scatter-plot-marker-size
+	macOS 設定 Yubico FIDO U2F Security Key 實體金鑰認證遠端登入 SSH 伺服器教學 - G. T. Wang: https://blog.gtwang.org/linux/linux-configure-ssh-with-yubikey-fido-u2f-security-key-authentication/
+	How to extract table data from PDF as CSV from the command line?: https://stackoverflow.com/questions/30310416/how-to-extract-table-data-from-pdf-as-csv-from-the-command-line
+	從監視攝影機理解 Log4j 跟 Log4Shell 漏洞: https://tech-blog.cymetrics.io/posts/huli/what-is-log4j-and-log4shell/
+	GitHub - ECPay/Odoo_Payment: Odoo 綠界金流模組: https://github.com/ECPay/Odoo_Payment
+	How to Backup and Restore Your GPG Key: https://risanb.com/code/backup-restore-gpg-key/
+	Python - Developers - Dropbox: https://www.dropbox.com/developers/documentation/python#tutorial
+	Dropbox API - 基礎應用 - IT Architect.HK: http://itarchitect.hk/2014/05/31/dropbox-api-%E5%9F%BA%E7%A4%8E%E6%87%89%E7%94%A8/
+	利用Dropbox API构建简易的Dropbox Client: https://chenliang0571.wordpress.com/2012/02/18/how-to-build-simple-dropbox-client/
+	Atom Syndication Format(Atom Feed) @ 小殘的程式光廊 :: 痞客邦 ::: http://emn178.pixnet.net/blog/post/83818924-atom-syndication-format%28atom-feed%29
+	GitHub - oniondelta/Onion_Rime_Files: 電腦 Rime 洋蔥方案（注音、雙拼、拼音、形碼、行列30）: https://github.com/oniondelta/Onion_Rime_Files
+
+Cluster 14: cloud (-0.0646576619707048)
+	Gartic Phone - The Telephone Game: https://garticphone.com/
+	Data Fetching: https://nuxtjs.org/docs/features/data-fetching
+	The context: https://nuxtjs.org/docs/internals-glossary/context/
+	Linchpins SearXNG: https://searx.linchpins.cloud/
+	Download music, movies, games, software! The Pirate Bay - The galaxy's most resilient BitTorrent site: https://thepiratebay.org/index.html
+	Play Go at online-go.com! | OGS: https://online-go.com/
+	Data templates: https://gohugo.io/templates/data-templates/#readout
+	Backblaze B2 backup setup: https://www.loganmarchione.com/2017/07/backblaze-b2-backup-setup/
+	The Best Unlimited Cloud Storage Services: https://www.backblaze.com/
+	Looking for best VPS Hosting With SSD & DDoS Protection?: https://www.photonvps.com/
+	ISCN Browser - powered by LikeCoin: https://likecoin.github.io/iscn-browser/
+	Homepage - Takeafile: https://takeafile.com/
+	Get Your Data Back with Linux-Based Data Recovery Tools - Linux.com: https://www.linux.com/learn/get-your-data-back-linux-based-data-recovery-tools
+	How to Use the Datalist Element for Guided Input: https://love2dev.com/blog/datalist/
+	Tutorial for relocating seafile-data directory (optionally on an encrypted volume): https://forum.seafile.com/t/tutorial-for-relocating-seafile-data-directory-optionally-on-an-encrypted-volume/131
+	Tutorial for Seafile CE + Nginx + dynamic DNS (on ARM / Cubietruck / RaspberryPi): https://forum.seafile.com/t/tutorial-for-seafile-ce-nginx-dynamic-dns-on-arm-cubietruck-raspberrypi/122
+	Njalla — Worlds most notorious privacy provider for domains, VPS' and VPNs.: https://njal.la/
+	e Foundation - deGoogled unGoogled smartphone operating systems and online services - your data is your data: https://e.foundation/
+	Internxt Lifetime Plans – Secure Cloud Storage For Life!: https://internxt.com/lifetime?irclickid=XnBzE8RmwxyIThYTwMRXlWQ3UkGRcxxyCUuJxY0&irgwc=1&utm_source=Impact&utm_medium=1995707
+	I HATE CELL PHONES! (aka the antichrist): https://videos.lukesmith.xyz/w/rdKQ7MVTBrMpqxgzXRa5n9
+
+Cluster 3: 許明恩 (-0.0766689657925431)
+	Wiwi.Video 好和弦聯播網: https://wiwi.video/
+	加密貨幣的節稅懶人包 ft. KPMG 稅務投資部營運長陳彩凰會計師: https://blocktrend.substack.com/p/ep166?s=r#details
+	| Yahoo奇摩拍賣: https://tw.bid.yahoo.com/amp/item/101128964416
+	認識管樂團 - HackMD: https://hackmd.io/@StarAtt/BkT_ReLI9#/
+	CS:APP 資源整理 - HackMD: https://hackmd.io/@owlfox/csapptw/%2FQXOhm8FgRqmSbhGlK52Dlw
+	NeoMutt 的使用 (IMAP): https://lin.moe/tutorial/2022/02/neomutt_smtp/
+	中華電信光世代 RTF8217 小烏龜 Admin 帳號密碼與連線方式！ - 傳說中的挨踢部門: https://mobileai.net/2022/06/14/cht-ftth-rtf8217/
+	Interview to Professor Yang: https://www.youtube.com/watch?v=uL005Zh0stE
+	存在的孤寂 - HackMD: https://hackmd.io/@wancat/H1KMSgXr5
+	HackMD 使用教學 - HackMD: https://hackmd.io/c/tutorials-tw/%2Fs%2F1aKiXT1WSyig_--o6Kp_8Q
+	手工紙盒製作 @ biotech :: 痞客邦 ::: http://biotech.pixnet.net/blog/post/38504867-%E6%89%8B%E5%B7%A5%E7%B4%99%E7%9B%92%E8%A3%BD%E4%BD%9C
+	Yahoo奇摩搜尋: http://tw.search.yahoo.com/?type=541231&fr=spigot-yhp-ff
+	�ʺ��g - �K�O�ʵe���e���ɪ��s !: http://www.cartoonmad.com/comic/1254.html
+	潘瑋柏UUU官方舞蹈設計: http://www.youtube.com/watch?v=LWxUvwOz-TM&feature=related
+	Flash MX ���u�P�C�ƤT���_����G: http://edson.tw/share/light036.html
+	View Section: 張潔平 :: SayIt: https://sayit.pdis.nat.gov.tw/2018-12-19-%E7%A4%BE%E5%89%B5%E4%B8%AD%E5%BF%83-%E7%AC%AC%E4%B8%89%E5%8D%81%E5%85%AD%E6%AC%A1-office-hour/%E5%BC%B5%E6%BD%94%E5%B9%B3#s250483
+	Sway (swayland i3-wm) 折腾心得: https://zhuanlan.zhihu.com/p/40812431
+	區塊勢 | 許明恩 | Substack: https://blocktrend.today/01-29-2019-quantum-computing-threat-bitcoin-blockchain
+	區塊勢 | 許明恩 | Substack: https://blocktrend.today/04-24-2018-cryptocurrency-did-not-encrypt
+	區塊勢 | 許明恩 | Substack: https://blocktrend.today/11-01-2018-bitcoin-whitepaper-10-year-anniversary
+	Yahoo奇摩字典搜尋: https://tw.dictionary.search.yahoo.com/
+	《隻手探險》 | Netflix 正式網頁: https://www.netflix.com/tw/title/81120982
+	《克勞斯：聖誕節的秘密》 | Netflix 正式網頁: https://www.netflix.com/tw/title/80183187
+	林貓 Zeko Lin: https://zeko.studio/
+	Scamstep🕳💸 (@r.t.news) • Instagram photos and videos: https://www.instagram.com/r.t.news/
+	HuoJu's BLOG: https://jhuo.ca/
+

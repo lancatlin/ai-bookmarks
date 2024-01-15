@@ -3,8 +3,9 @@ from sklearn.metrics import silhouette_samples
 import numpy as np
 
 from bookmark_manager import BookmarkManager
-from lda import get_title
 from cluster_info import ClusterInfo
+from embedder import Embedder
+from cluster_labeler import get_topics
 
 
 def std_dev(embeddings):
@@ -16,8 +17,9 @@ def std_dev(embeddings):
 
 
 class ClusterManager:
-    def __init__(self, manager: BookmarkManager):
+    def __init__(self, manager: BookmarkManager, embedder: Embedder):
         self.manager = manager
+        self.embedder = embedder
         self.model = AgglomerativeClustering(n_clusters=None, distance_threshold=2)
         # self.clusterModel = ClusterModel()
         self.embeddings_2d = None
@@ -49,7 +51,9 @@ class ClusterManager:
         clusters = []
         for i, bookmarks in clustered_bookmarks.items():
             silhouette_score = silhouette_result[i] / len(bookmarks)
-            clusters.append(ClusterInfo(i, bookmarks, score=silhouette_score))
+            cluster = ClusterInfo(i, bookmarks, score=silhouette_score)
+            cluster.title = self.select_title(cluster)
+            clusters.append(cluster)
 
         clusters.sort(key=lambda x: x.score, reverse=True)
         self.manager.set_cluster_info(clusters)
@@ -58,3 +62,17 @@ class ClusterManager:
         for cluster in self.manager.clusters:
             print(cluster)
             print()
+
+    def select_title(self, cluster: ClusterInfo):
+        topics = get_topics(cluster)
+        print("topics", topics)
+
+        vectors = self.manager.embeddings[self.cluster_labels == cluster.id]
+
+        mean = np.mean(vectors, axis=0)
+
+        topic_vectors = self.embedder.embed(topics)
+
+        distances = np.sqrt(((topic_vectors - mean) ** 2).sum(axis=1))
+        closest_topic = np.argmin(distances)
+        return topics[closest_topic]
