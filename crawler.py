@@ -50,10 +50,5 @@ class Crawler:
             parser = Parser(html)
             bookmark.title = parser.get_title()
             bookmark.description = parser.get_description()
-            if bookmark.title == "" or bookmark.description == "":  # needs selenium:
-                # call selenium
-                # crawler.crawl(self.url)
-                pass
-
         except Exception as e:
             print(f"Error fetching URL: {e}")
