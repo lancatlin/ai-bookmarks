@@ -1,3 +1,4 @@
+import os
 import argparse
 from bookmark_manager import BookmarkManager
 
@@ -10,7 +11,7 @@ def run_crawler(args):
     cralwer = Crawler(manager)
     cralwer.parse(args.bookmark_file)
     cralwer.retrieve()
-    manager.export(args.csv_file)
+    manager.export(args.csv_file, lambda x: x.title != "" and x.description != "")
 
 
 def run_embedder(args):
@@ -77,6 +78,13 @@ def run_visualizer(args):
     visualizer.visualize()
 
 
+def run_select_clusters(args):
+    print("Running select clusters")
+    manager = BookmarkManager()
+    manager.load(args.csv_file)
+    manager.export(args.save_file, lambda x: x.cluster in args.clusters)
+
+
 def run_all(args):
     run_crawler(args)
     run_embedder(args)
@@ -87,24 +95,25 @@ def run_all(args):
 def parse_args():
     parser = argparse.ArgumentParser(description="Process and visualize bookmark data.")
     parser.add_argument(
+        "-d", "--dir", type=str, help="Path to the bookmark directory.", default="data"
+    )
+
+    parser.add_argument(
         "-c",
         "--csv_file",
         type=str,
         help="Path to the CSV file for embeddings.",
-        default="data/bookmarks.csv",
     )
     parser.add_argument(
         "-e",
         "--embedding_path",
         type=str,
         help="Path to save embeddings.",
-        default="data/embeddings.npy",
     )
     parser.add_argument(
         "--cluster_path",
         type=str,
         help="Path to save embeddings.",
-        default="data/clusters.csv",
     )
 
     subcmd = parser.add_subparsers(
@@ -128,6 +137,13 @@ def parse_args():
     lda_parser = subcmd.add_parser("lda", help="Run the cluster.")
     lda_parser.set_defaults(func=run_lda)
 
+    select_parser = subcmd.add_parser("select", help="Select clusters.")
+    select_parser.add_argument("save_file", type=str, help="Path to the bookmark file.")
+    select_parser.add_argument(
+        "clusters", type=int, nargs="+", help="Clusters to select."
+    )
+    select_parser.set_defaults(func=run_select_clusters)
+
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)
 
@@ -143,6 +159,19 @@ def parse_args():
 def main():
     parser = parse_args()
     args = parser.parse_args()
+    directory = args.dir
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    if not args.csv_file:
+        args.csv_file = os.path.join(directory, "bookmarks.csv")
+
+    if not args.embedding_path:
+        args.embedding_path = os.path.join(directory, "embeddings.npy")
+
+    if not args.cluster_path:
+        args.cluster_path = os.path.join(directory, "clusters.csv")
+
     if hasattr(args, "func"):
         args.func(args)
     else:

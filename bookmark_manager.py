@@ -35,14 +35,14 @@ class BookmarkManager(BookmarkSet):
     def load_embedding(self, file_name):
         self.embeddings = np.load(file_name)
 
-    def export(self, file_name):
+    def export(self, file_name, condition=lambda x: True):
         with open(file_name, "w") as csvfile:
             fieldnames = ["url", "title", "description", "date", "icon", "cluster"]
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
             writer.writeheader()
             for bookmark in self.bookmarks:
-                if bookmark.title != "" and bookmark.description != "":
+                if condition(bookmark):
                     writer.writerow(bookmark.export())
             print("Done")
 
