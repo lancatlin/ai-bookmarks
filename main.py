@@ -85,7 +85,7 @@ def run_select_clusters(args):
     manager.export(args.save_file, lambda x: x.cluster in args.clusters)
 
 
-def run_render(args):
+def run_export(args):
     print("Running render")
     from render import generate_html_page
 
@@ -160,7 +160,7 @@ def parse_args():
     visualizer_parser = subcmd.add_parser("visualize", help="Run the visualizer.")
     visualizer_parser.set_defaults(func=run_visualizer)
 
-    render_parser = subcmd.add_parser("render", help="Render the clusters.")
+    render_parser = subcmd.add_parser("export", help="Render the clusters.")
     render_parser.add_argument("output_file", type=str, help="Path to the output file.")
     render_parser.add_argument(
         "--template_file",
@@ -168,7 +168,7 @@ def parse_args():
         help="Path to the template file.",
         default="template/bookmarks.html",
     )
-    render_parser.set_defaults(func=run_render)
+    render_parser.set_defaults(func=run_export)
 
     run_all_parser = subcmd.add_parser("run", help="Run all.")
     run_all_parser.add_argument(
